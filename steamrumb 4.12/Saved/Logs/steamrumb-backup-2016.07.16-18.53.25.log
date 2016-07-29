@@ -1,0 +1,990 @@
+﻿Log file open, 07/16/16 18:15:59
+LogInit:Display: Running engine for game: steamrumb
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1546259701) SRandInit(-1546259699).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.069609
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line: 
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.16-09.15.59:789][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.16-09.15.59:789][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.16-09.15.59:814][  0]LogInit: Computer: MIYAZEMI-01
+[2016.07.16-09.15.59:814][  0]LogInit: User: game
+[2016.07.16-09.15.59:814][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.16-09.15.59:814][  0]LogInit: High frequency timer resolution =3.355283 MHz
+[2016.07.16-09.15.59:814][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2016.07.16-09.15.59:814][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.16-09.15.59:814][  0]LogMemory: Process Physical Memory: 190.46 MB used, 190.46 MB peak
+[2016.07.16-09.15.59:814][  0]LogMemory: Process Virtual Memory: 195.19 MB used, 195.19 MB peak
+[2016.07.16-09.15.59:814][  0]LogMemory: Physical Memory: 5373.53 MB used, 16365.14 MB total
+[2016.07.16-09.15.59:814][  0]LogMemory: Virtual Memory: 554.16 MB used, 134217728.00 MB total
+[2016.07.16-09.15.59:840][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.07.16-09.15.59:905][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.07.16-09.16.00:034][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.16-09.16.00:052][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.07.16-09.16.00:052][  0]LogD3D11RHI:       4007/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
+[2016.07.16-09.16.00:053][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.07.16-09.16.00:053][  0]LogD3D11RHI:       0/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.07.16-09.16.00:053][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.07.16-09.16.00:057][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.16-09.16.00:057][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.16-09.16.00:057][  0]LogWindows: EnumDisplayDevices:
+[2016.07.16-09.16.00:057][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2016.07.16-09.16.00:057][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.07.16-09.16.00:058][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.07.16-09.16.00:058][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.07.16-09.16.00:058][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.07.16-09.16.00:058][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.07.16-09.16.00:058][  0]LogD3D11RHI:   Driver Version: 365.10 (internal:10.18.13.6510, unified:365.10)
+[2016.07.16-09.16.00:058][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.07.16-09.16.00:058][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.07.16-09.16.00:070][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.16-09.16.00:085][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 2)
+[2016.07.16-09.16.00:085][  0]LogShaderCompilers: Guid format shader working directory is -19 characters bigger than the processId version (../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Intermediate/Shaders/WorkingDirectory/12180/).
+[2016.07.16-09.16.00:085][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/game/AppData/Local/Temp/UnrealShaderWorkingDir/B31FA22F4A45FE7859B8D08070635083/'.
+[2016.07.16-09.16.00:085][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.16-09.16.00:901][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.07.16-09.16.00:909][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.16-09.16.00:917][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.16-09.16.00:924][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.16-09.16.00:932][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.16-09.16.00:938][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.07.16-09.16.00:945][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.07.16-09.16.00:950][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.07.16-09.16.00:957][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.07.16-09.16.00:963][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.07.16-09.16.00:969][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.07.16-09.16.00:982][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.07.16-09.16.00:982][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.07.16-09.16.00:983][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.07.16-09.16.01:002][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.07.16-09.16.01:008][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.07.16-09.16.01:014][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.07.16-09.16.01:020][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.07.16-09.16.01:027][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.07.16-09.16.01:027][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.16-09.16.01:086][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.16-09.16.01:151][  0]LogDerivedDataCache: Loaded boot cache 0.07s 78MB C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.16-09.16.01:151][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.16-09.16.01:152][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.16-09.16.01:152][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.16-09.16.01:152][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.16-09.16.01:152][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.16-09.16.01:167][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.16-09.16.01:178][  0]LogDerivedDataCache: Using Local data cache path C:/Users/game/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.16-09.16.01:349][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.16-09.16.01:349][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.07.16-09.16.01:484][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.16-09.16.01:484][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.16-09.16.01:484][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.16-09.16.01:689][  0]LogAssetRegistry: FAssetRegistry took 0.0211 seconds to start up
+[2016.07.16-09.16.01:713][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.022129 seconds
+[2016.07.16-09.16.01:717][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.07.16-09.16.01:717][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.07.16-09.16.01:717][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.16-09.16.01:723][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.16-09.16.01:863][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.16-09.16.01:863][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.16-09.16.02:415][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.07.16-09.16.02:599][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.16-09.16.02:627][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.16-09.16.02:634][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.16-09.16.02:641][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.16-09.16.02:812][  0]LogEngine: Initializing Engine...
+[2016.07.16-09.16.02:823][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-8F83D948
+[2016.07.16-09.16.02:837][  0]LogHMD: SteamVR initialized.  Driver: lighthouse  Display: LHR-8F83D948
+[2016.07.16-09.16.02:950][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.07.16-09.16.02:961][  0]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.16.02:969][  0]LogInit: FAudioDevice initialized.
+[2016.07.16-09.16.03:000][  0]LogDerivedDataCache: Saved boot cache 0.03s 78MB C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.16-09.16.03:010][  0]LogInit: Texture streaming: Enabled
+[2016.07.16-09.16.03:030][  0]LogInit: Transaction tracking system initialized
+[2016.07.16-09.16.03:048][  0]BlueprintLog: New page: エディタの読み込み
+[2016.07.16-09.16.03:100][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.07.16-09.16.03:150][  0]LogConsoleResponse:Display: 
+[2016.07.16-09.16.03:262][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.07.16-09.16.03:262][  0]LogCook:Display: Mobile HDR setting 1
+[2016.07.16-09.16.03:340][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/' took 0.03s
+[2016.07.16-09.16.03:340][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.16-09.16.03:340][  0]Cmd: MAP LOAD FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.07.16-09.16.03:392][  0]LightingResults: New page: ライティングのビルド
+[2016.07.16-09.16.03:394][  0]MapCheck: New page: マップをチェック
+[2016.07.16-09.16.03:394][  0]LightingResults: New page: <何も選択されていません>
+[2016.07.16-09.16.07:107][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.16.07:117][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.07.16-09.16.07:118][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.07.16-09.16.07:165][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 47.399ミリ秒かかりました。
+[2016.07.16-09.16.07:166][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 3.825
+[2016.07.16-09.16.07:363][  0]LogCollectionManager: Loaded 0 collections in 0.001449 seconds
+[2016.07.16-09.16.07:400][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Collections/' took 0.01s
+[2016.07.16-09.16.07:400][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/Developers/game/Collections/' took 0.01s
+[2016.07.16-09.16.07:400][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/Collections/' took 0.01s
+[2016.07.16-09.16.07:400][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.07.16-09.16.07:407][  0]LogContentBrowser: Native class hierarchy populated in 0.0069 seconds. Added 2047 classes and 369 folders.
+[2016.07.16-09.16.07:410][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.07.16-09.16.07:410][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.07.16-09.16.07:411][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.07.16-09.16.07:414][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.16-09.16.08:114][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.16-09.16.08:117][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.16-09.16.08:192][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.07.16-09.16.08:196][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.07.16-09.16.08:222][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.16-09.16.08:222][  0]LogLoad: Full Startup: 9.31 seconds (BP compile: 0.20 seconds)
+[2016.07.16-09.16.08:222][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.07.16-09.16.08:222][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.07.16-09.16.08:276][  0]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.07.16-09.16.08:278][  0]LogOcInput: OculusInput pre-init called
+[2016.07.16-09.16.08:298][  0]LogContentStreaming: Texture pool size now 700 MB
+[2016.07.16-09.16.08:559][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2016.07.16-09.16.08:712][  2]LogAssetRegistry: Asset discovery search completed in 7.0445 seconds
+[2016.07.16-09.16.08:712][  2]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.07.16-09.16.08:712][  2]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000024 seconds (updated 0 objects)
+[2016.07.16-09.18.56:844][397]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/game/Downloads/coa.fbx)
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: GlobalSettings, ItemCount : 1
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: AnimationStack, ItemCount : 1
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: AnimationLayer, ItemCount : 1
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: Geometry, ItemCount : 2
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: Material, ItemCount : 1
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: Model, ItemCount : 2
+[2016.07.16-09.18.56:854][397]LogFbx: ItemName: CollectionExclusive, ItemCount : 1
+[2016.07.16-09.18.56:858][397]LogFbx: Loading FBX Scene from ../../../../../../Users/game/Downloads/coa.fbx
+[2016.07.16-09.18.56:863][397]LogFbx: FBX Scene Loaded Succesfully
+[2016.07.16-09.19.04:783][397]LogFbx: Loading FBX Scene from ../../../../../../Users/game/Downloads/coa.fbx
+[2016.07.16-09.19.04:788][397]LogFbx: FBX Scene Loaded Succesfully
+[2016.07.16-09.19.04:790][397]LogFbx:Warning: Triangulating static mesh pCylinder1
+[2016.07.16-09.19.04:814][397]LogFbx:Warning: Triangulating static mesh pCube15
+[2016.07.16-09.19.04:842][397]LogStaticMesh: スタティックメッシュ coa をビルド中...
+[2016.07.16-09.19.04:852][397]LogStaticMesh: Built static mesh [0.01s] /Game/MixamoAnimPack/Mixamo_Maria/coa.coa
+[2016.07.16-09.19.04:873][397]FBXImport:Warning: 警告 警告：このFBXシーンにはスムージンググループ情報がありません。ファイルをエクスポートする前に必ずFBX Exporter プラグインの[Export Smoothing Groups] オプションを有効にしてください。スムージング グループをサポートしないツールの場合でも、インポート中に正しい頂点法線を推測するため、FBX Exporter はエクスポート時に適切なスムージング データを生成します。 
+[2016.07.16-09.19.04:904][397]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/game/Downloads/foot.fbx)
+[2016.07.16-09.19.07:045][397]LogFbx: Loading FBX Scene from ../../../../../../Users/game/Downloads/foot.fbx
+[2016.07.16-09.19.07:052][397]LogFbx: FBX Scene Loaded Succesfully
+[2016.07.16-09.19.07:054][397]LogFbx:Warning: Triangulating static mesh pasted__pCube16
+[2016.07.16-09.19.07:209][397]LogStaticMesh: スタティックメッシュ foot をビルド中...
+[2016.07.16-09.19.07:245][397]LogStaticMesh: Built static mesh [0.04s] /Game/MixamoAnimPack/Mixamo_Maria/foot.foot
+[2016.07.16-09.19.07:253][397]FBXImport:Warning: 警告 警告：このFBXシーンにはスムージンググループ情報がありません。ファイルをエクスポートする前に必ずFBX Exporter プラグインの[Export Smoothing Groups] オプションを有効にしてください。スムージング グループをサポートしないツールの場合でも、インポート中に正しい頂点法線を推測するため、FBX Exporter はエクスポート時に適切なスムージング データを生成します。 
+[2016.07.16-09.19.07:287][397]LogFactory: FactoryCreateFile: StaticMesh with FbxFactory (0 0 ../../../../../../Users/game/Downloads/tank.fbx)
+[2016.07.16-09.19.11:271][397]LogFbx: Loading FBX Scene from ../../../../../../Users/game/Downloads/tank.fbx
+[2016.07.16-09.19.11:276][397]LogFbx: FBX Scene Loaded Succesfully
+[2016.07.16-09.19.11:278][397]LogFbx: =================================================
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:278][397]LogFbx: 	Total Deformer Count 1474258624.
+[2016.07.16-09.19.11:278][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:278][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:278][397]LogFbx: =================================================
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:278][397]LogFbx: 	Total Deformer Count 958711696.
+[2016.07.16-09.19.11:278][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:278][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:278][397]LogFbx: =================================================
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:278][397]LogFbx: 	Total Deformer Count 1474258624.
+[2016.07.16-09.19.11:278][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:278][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:278][397]LogFbx: =================================================
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:278][397]LogFbx: 	Total Deformer Count 958712088.
+[2016.07.16-09.19.11:278][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:278][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:278][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:279][397]LogFbx: Triangulating skeletal mesh pCylinder10
+[2016.07.16-09.19.11:332][397]LogFbx:Warning: Bones digested - 1  Depth of hierarchy - 1
+[2016.07.16-09.19.11:347][397]LogSkeletalMesh: Chunk 0: 376 rigid vertices, 0 soft vertices, 1 active bones
+[2016.07.16-09.19.11:347][397]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 560 triangles
+[2016.07.16-09.19.11:348][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset' が見つかりません
+[2016.07.16-09.19.11:348][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset' が見つかりません
+[2016.07.16-09.19.11:349][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset.tank_pCylinder10_PhysicsAsset' が見つかりませんでした
+[2016.07.16-09.19.11:350][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton' が見つかりません
+[2016.07.16-09.19.11:350][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton' が見つかりません
+[2016.07.16-09.19.11:350][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton.tank_pCylinder10_Skeleton' が見つかりませんでした
+[2016.07.16-09.19.11:351][397]LogFbx: =================================================
+[2016.07.16-09.19.11:351][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:351][397]LogFbx: 	Total Deformer Count 1474257856.
+[2016.07.16-09.19.11:351][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:351][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:351][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:351][397]LogFbx: =================================================
+[2016.07.16-09.19.11:351][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:351][397]LogFbx: 	Total Deformer Count 958711640.
+[2016.07.16-09.19.11:352][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:352][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:352][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:352][397]LogFbx: =================================================
+[2016.07.16-09.19.11:352][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:352][397]LogFbx: 	Total Deformer Count 1474257856.
+[2016.07.16-09.19.11:352][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:352][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:352][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:352][397]LogFbx: =================================================
+[2016.07.16-09.19.11:352][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:352][397]LogFbx: 	Total Deformer Count 958712984.
+[2016.07.16-09.19.11:352][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:352][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:352][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:352][397]LogFbx: SortedLinks :(0) pCylinder10
+[2016.07.16-09.19.11:352][397]LogFbx: Parsing AnimStack Take 001
+[2016.07.16-09.19.11:352][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim' が見つかりません
+[2016.07.16-09.19.11:352][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim' が見つかりません
+[2016.07.16-09.19.11:352][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim.tank_pCylinder10_Anim' が見つかりませんでした
+[2016.07.16-09.19.11:355][397]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim.tank_pCylinder10_Anim
+[2016.07.16-09.19.11:357][397]LogFbx: Triangulating skeletal mesh pCube13
+[2016.07.16-09.19.11:382][397]LogFbx:Warning: Bones digested - 1  Depth of hierarchy - 1
+[2016.07.16-09.19.11:387][397]LogSkeletalMesh: Chunk 0: 168 rigid vertices, 0 soft vertices, 1 active bones
+[2016.07.16-09.19.11:387][397]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 224 triangles
+[2016.07.16-09.19.11:388][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset' が見つかりません
+[2016.07.16-09.19.11:388][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset' が見つかりません
+[2016.07.16-09.19.11:388][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset.tank_pCube13_PhysicsAsset' が見つかりませんでした
+[2016.07.16-09.19.11:389][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton' が見つかりません
+[2016.07.16-09.19.11:389][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton' が見つかりません
+[2016.07.16-09.19.11:389][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton.tank_pCube13_Skeleton' が見つかりませんでした
+[2016.07.16-09.19.11:390][397]LogFbx: =================================================
+[2016.07.16-09.19.11:390][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:390][397]LogFbx: 	Total Deformer Count 1474258240.
+[2016.07.16-09.19.11:390][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:390][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:390][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:390][397]LogFbx: =================================================
+[2016.07.16-09.19.11:390][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:390][397]LogFbx: 	Total Deformer Count 958711360.
+[2016.07.16-09.19.11:390][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:390][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:390][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:391][397]LogFbx: =================================================
+[2016.07.16-09.19.11:391][397]LogFbx: Dumping Node START [pCylinder10] 
+[2016.07.16-09.19.11:391][397]LogFbx: 	Total Deformer Count 1474258240.
+[2016.07.16-09.19.11:391][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:391][397]LogFbx: 		[Node Attribute Child 1] pCylinder10 (Type Mesh).
+[2016.07.16-09.19.11:391][397]LogFbx: Dumping Node END [pCylinder10]
+[2016.07.16-09.19.11:391][397]LogFbx: =================================================
+[2016.07.16-09.19.11:391][397]LogFbx: Dumping Node START [pCube13] 
+[2016.07.16-09.19.11:391][397]LogFbx: 	Total Deformer Count 958712648.
+[2016.07.16-09.19.11:391][397]LogFbx: 	Attribute () Type (4).
+[2016.07.16-09.19.11:391][397]LogFbx: 		[Node Attribute Child 1] pCube13 (Type Mesh).
+[2016.07.16-09.19.11:391][397]LogFbx: Dumping Node END [pCube13]
+[2016.07.16-09.19.11:391][397]LogFbx: SortedLinks :(0) pCube13
+[2016.07.16-09.19.11:391][397]LogFbx: Parsing AnimStack Take 001
+[2016.07.16-09.19.11:391][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim' が見つかりません
+[2016.07.16-09.19.11:391][397]LogLinker:Warning: ファイル '/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim' が見つかりません
+[2016.07.16-09.19.11:391][397]LogUObjectGlobals:Warning: オブジェクト 'Object /Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim.tank_pCube13_Anim' が見つかりませんでした
+[2016.07.16-09.19.11:393][397]LogAnimationCompression: Building Anim DDC data for AnimSequence /Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim.tank_pCube13_Anim
+[2016.07.16-09.19.11:396][397]FBXImport:Warning: 警告 警告：このFBXシーンにはスムージンググループ情報がありません。ファイルをエクスポートする前に必ずFBX Exporter プラグインの[Export Smoothing Groups] オプションを有効にしてください。スムージング グループをサポートしないツールの場合でも、インポート中に正しい頂点法線を推測するため、FBX Exporter はエクスポート時に適切なスムージング データを生成します。 
+[2016.07.16-09.19.11:396][397]FBXImport:Warning: 警告 バインドポーズが見つかりませんでした。バインドポーズに時間0を使用します 
+[2016.07.16-09.19.11:396][397]FBXImport:Warning: 警告 バインドポーズが見つかりませんでした。バインドポーズに時間0を使用します 
+[2016.07.16-09.21.00:079][379]LogRenderer: Reallocating scene render targets to support 1208x880 (Frame:52947).
+[2016.07.16-09.21.36:120][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword1_D (AutoDXT)
+[2016.07.16-09.21.36:173][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword2_D (AutoDXT)
+[2016.07.16-09.21.36:230][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword1_N (BC5)
+[2016.07.16-09.21.36:239][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword2_N (BC5)
+[2016.07.16-09.21.36:250][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword1_M (AutoDXT)
+[2016.07.16-09.21.36:256][425]LogTexture:Display: テクスチャをビルド中: T_Blade_BlackKnight_Sword2_M (AutoDXT)
+[2016.07.16-09.21.36:265][425]LogMaterial: Missing cached shader map for material M_Blade_BlackKnight, compiling. 
+[2016.07.16-09.21.50:364][867]LogMaterial: Missing cached shader map for material Alpha_Body, compiling. 
+[2016.07.16-09.22.24:052][230]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MixamoAnimPack/Mixamo_Maria/coa" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset" SILENT=true
+[2016.07.16-09.22.24:065][230]LogSavePackage: Save=12.03ms
+[2016.07.16-09.22.24:065][230]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/coa725166724B27261223760AAC97E07A06.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset'
+[2016.07.16-09.22.24:068][230]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset
+[2016.07.16-09.23.04:449][472]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MixamoAnimPack/Mixamo_Maria/foot" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/foot.uasset" SILENT=true
+[2016.07.16-09.23.04:462][472]LogSavePackage: Save=11.38ms
+[2016.07.16-09.23.04:462][472]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/foot0D3A5E6444870D0D3628CA9CD7AC9BED.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/foot.uasset'
+[2016.07.16-09.23.04:463][472]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/foot.uasset
+[2016.07.16-09.23.08:163][735]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2016.07.16-09.23.19:451][635]LogMaterial:Warning: Material /Game/StarterContent/Materials/M_Metal_Copper.M_Metal_Copper needed to have new flag set bUsedWithSkeletalMesh !
+[2016.07.16-09.23.19:453][635]LogMaterial: Missing cached shader map for material M_Metal_Copper, compiling. 
+[2016.07.16-09.23.19:512][635]LogMaterial: 0.00 seconds spent updating 1 materials, 1 interfaces, 0 instances, 0 with static permutations.
+[2016.07.16-09.23.36:904][782]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_1) - call TermArticulated first.
+[2016.07.16-09.24.11:255][594]LogContentBrowser: Native class hierarchy updated for 'DestructibleMeshEditor' in 0.0004 seconds. Added 1 classes and 2 folders.
+[2016.07.16-09.24.11:271][594]LogDestructible:Warning: MainMesh Tris: 502
+[2016.07.16-09.24.11:346][594]LogApexDestructibleAssetImport:Warning: Using default materials for material slot
+[2016.07.16-09.24.11:346][594]LogApexDestructibleAssetImport:Warning: Bones digested - 2  Depth of hierarchy - 2
+[2016.07.16-09.24.11:356][594]LogSkeletalMesh: Chunk 0: 762 rigid vertices, 0 soft vertices, 1 active bones
+[2016.07.16-09.24.11:360][594]LogSkeletalMesh: Section 0: Material=0, Chunk=0, 502 triangles
+[2016.07.16-09.24.25:172][590]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DestructibleComponent_1' or package '/Engine/Transient'.
+[2016.07.16-09.24.35:264][489]LogActorFactory: Actor Factory created coa
+[2016.07.16-09.24.35:963][552]LogActorFactory: Actor Factory created coa
+[2016.07.16-09.24.39:425][870]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (coa)
+[2016.07.16-09.24.42:665][123]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 111 classes and 0 folders.
+[2016.07.16-09.26.20:670][239]LogSavePackage: Save=228.21ms
+[2016.07.16-09.26.20:670][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/ThirdPersonExampleMap_Auto158B4D6D149DE18D266B035B9098FFA5B.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap'
+[2016.07.16-09.26.20:671][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto1.umap
+[2016.07.16-09.26.20:673][239]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.297
+[2016.07.16-09.26.20:673][239]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.297
+[2016.07.16-09.26.20:675][239]OBJ SavePackage: Generating thumbnails for [2] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank] ([2] browsable assets)...
+[2016.07.16-09.26.20:687][239]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/MixamoAnimPack/Mixamo_Maria/tank.tank_pCylinder10]
+[2016.07.16-09.26.20:697][239]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/MixamoAnimPack/Mixamo_Maria/tank.tank_pCube13]
+[2016.07.16-09.26.20:698][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank]
+[2016.07.16-09.26.20:717][239]LogSavePackage: Save=17.92ms
+[2016.07.16-09.26.20:717][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_Auto19C2BBBB147E3329D0E0DDA9AF09E0352.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_Auto1.uasset'
+[2016.07.16-09.26.20:721][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_Auto1.uasset
+[2016.07.16-09.26.20:722][239]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset] ([1] browsable assets)...
+[2016.07.16-09.26.20:722][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset]
+[2016.07.16-09.26.20:726][239]LogSavePackage: Save=3.30ms
+[2016.07.16-09.26.20:726][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCylinder10_PhysicsAsset_Auto1A212EE294E3E162BFEB9F7978F6DD3D7.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset_Auto1.uasset'
+[2016.07.16-09.26.20:727][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_PhysicsAsset_Auto1.uasset
+[2016.07.16-09.26.20:728][239]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton] ([1] browsable assets)...
+[2016.07.16-09.26.20:728][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton]
+[2016.07.16-09.26.20:732][239]LogSavePackage: Save=2.95ms
+[2016.07.16-09.26.20:732][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCylinder10_Skeleton_Auto1B95E271C4C3C8FF036F176BF273DC639.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton_Auto1.uasset'
+[2016.07.16-09.26.20:733][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Skeleton_Auto1.uasset
+[2016.07.16-09.26.20:733][239]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim] ([1] browsable assets)...
+[2016.07.16-09.26.20:745][239]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim.tank_pCylinder10_Anim]
+[2016.07.16-09.26.20:745][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim]
+[2016.07.16-09.26.20:757][239]LogSavePackage: Save=10.76ms
+[2016.07.16-09.26.20:757][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCylinder10_Anim_Auto1A31618F640B22C502DBDEAAAC2BEE738.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim_Auto1.uasset'
+[2016.07.16-09.26.20:758][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCylinder10_Anim_Auto1.uasset
+[2016.07.16-09.26.20:758][239]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset] ([1] browsable assets)...
+[2016.07.16-09.26.20:758][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset]
+[2016.07.16-09.26.20:762][239]LogSavePackage: Save=3.14ms
+[2016.07.16-09.26.20:763][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCube13_PhysicsAsset_Auto165AB8780439D073787099A8AFE25594E.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset_Auto1.uasset'
+[2016.07.16-09.26.20:763][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_PhysicsAsset_Auto1.uasset
+[2016.07.16-09.26.20:764][239]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton] ([1] browsable assets)...
+[2016.07.16-09.26.20:764][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton]
+[2016.07.16-09.26.20:767][239]LogSavePackage: Save=2.68ms
+[2016.07.16-09.26.20:768][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCube13_Skeleton_Auto19E35CED949F33172A76FAEBA63A13367.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton_Auto1.uasset'
+[2016.07.16-09.26.20:768][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Skeleton_Auto1.uasset
+[2016.07.16-09.26.20:769][239]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim] ([1] browsable assets)...
+[2016.07.16-09.26.20:780][239]OBJ SavePackage:     Rendered thumbnail for [AnimSequence /Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim.tank_pCube13_Anim]
+[2016.07.16-09.26.20:780][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim]
+[2016.07.16-09.26.20:791][239]LogSavePackage: Save=10.34ms
+[2016.07.16-09.26.20:791][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/tank_pCube13_Anim_Auto1FB1B440F4DCEF0A2389D4B96A01332FE.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim_Auto1.uasset'
+[2016.07.16-09.26.20:792][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/tank_pCube13_Anim_Auto1.uasset
+[2016.07.16-09.26.20:793][239]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/StarterContent/Materials/M_Metal_Copper] ([1] browsable assets)...
+[2016.07.16-09.26.20:804][239]OBJ SavePackage:     Rendered thumbnail for [Material /Game/StarterContent/Materials/M_Metal_Copper.M_Metal_Copper]
+[2016.07.16-09.26.20:804][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/StarterContent/Materials/M_Metal_Copper]
+[2016.07.16-09.26.20:829][239]LogSavePackage: Save=16.13ms
+[2016.07.16-09.26.20:829][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/M_Metal_Copper_Auto123FFB35A41B0DDD0A2555AAAAFE6F4F4.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/StarterContent/Materials/M_Metal_Copper_Auto1.uasset'
+[2016.07.16-09.26.20:835][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/StarterContent/Materials/M_Metal_Copper_Auto1.uasset
+[2016.07.16-09.26.20:835][239]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/coa_Blueprint] ([1] browsable assets)...
+[2016.07.16-09.26.20:846][239]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/coa_Blueprint.coa_Blueprint]
+[2016.07.16-09.26.20:846][239]OBJ SavePackage: Finished generating thumbnails for package [/Game/coa_Blueprint]
+[2016.07.16-09.26.20:846][239]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/coa_Blueprint" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/coa_Blueprint_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2016.07.16-09.26.20:867][239]LogSavePackage: Save=19.64ms
+[2016.07.16-09.26.20:867][239]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/coa_Blueprint_Auto1BDCE6E8042961580258F9781A1F3A2F4.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/coa_Blueprint_Auto1.uasset'
+[2016.07.16-09.26.20:868][239]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/coa_Blueprint_Auto1.uasset
+[2016.07.16-09.26.20:868][239]LogFileHelpers: Auto-saving content packages took 0.195
+[2016.07.16-09.30.41:218][391]LogEditorTransaction: Undo コンポーネントを修正
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_108' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_coa_Blueprint_C_1' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'DEADCLASS_coa_Blueprint_C_0' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_106' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_94' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_104' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_96' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_98' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_SKEL_coa_Blueprint_C_111' or package '/Engine/Transient'.
+[2016.07.16-09.31.20:926][442]LogObjectTools:Warning: ForceReplaceReferences replaced references for a transient object 'REINST_coa_Blueprint_C_110' or package '/Engine/Transient'.
+[2016.07.16-09.32.25:146][420]LogRenderer: Reallocating scene render targets to support 1208x904 (Frame:131091).
+[2016.07.16-09.32.39:084][732]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MixamoAnimPack/Mixamo_Maria/coa" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset" SILENT=true
+[2016.07.16-09.32.39:113][732]LogSavePackage: Save=17.51ms
+[2016.07.16-09.32.39:113][732]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/coa285B567D4B877A5D2E523F8582CD34F1.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset'
+[2016.07.16-09.32.39:119][732]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset
+[2016.07.16-09.32.41:043][865]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.32.41:044][865]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.07.16-09.32.41:044][865]LogPlayLevel: [PlayLevel] Compiling parts before play...
+[2016.07.16-09.32.41:121][865]LogPlayLevel: PlayLevel: Blueprint regeneration took 77 ms (3 blueprints)
+[2016.07.16-09.32.41:122][865]LogPlayLevel: [PlayLevel] Compiling AIchara before play...
+[2016.07.16-09.32.41:206][865]LogPlayLevel: PlayLevel: Blueprint regeneration took 161 ms (4 blueprints)
+[2016.07.16-09.32.41:206][865]LogPlayLevel: [PlayLevel] Compiling Mixamo_Maria before play...
+[2016.07.16-09.32.41:274][865]LogPlayLevel: PlayLevel: Blueprint regeneration took 230 ms (4 blueprints)
+[2016.07.16-09.32.41:274][865]LogPlayLevel: [PlayLevel] Compiling AIBP before play...
+[2016.07.16-09.32.41:354][865]LogPlayLevel: PlayLevel: Blueprint regeneration took 310 ms (4 blueprints)
+[2016.07.16-09.32.41:377][865]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:32:41)
+[2016.07.16-09.32.41:377][865]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.32.41:395][865]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018163s)
+[2016.07.16-09.32.41:396][865]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.32.41:396][865]LogPlayLevel: PIE: World Init took: (0.000868s)
+[2016.07.16-09.32.41:396][865]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019334s)
+[2016.07.16-09.32.41:425][865]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.32.41:431][865]LogInit: FAudioDevice initialized.
+[2016.07.16-09.32.41:531][865]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.32.41:537][865]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.32.41
+[2016.07.16-09.32.41:540][865]LogWorld: Bringing up level for play took: 0.008116
+[2016.07.16-09.32.41:543][865]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.07.16-09.32.41:546][865]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.018のプレイ イン エディタの開始時間
+[2016.07.16-09.32.41:546][865]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.32.41:616][866]LogRenderer: Reallocating scene render targets to support 1692x904 (Frame:132578).
+[2016.07.16-09.32.56:144][446]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.32.56:226][446]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.18:355][  1]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.34.18:448][  1]BlueprintEditorCompileResults: 情報 [1099.53] Compile of parts successful! [in 92 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.34.20:553][123]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.20:553][123]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.34.20:553][123]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:34:20)
+[2016.07.16-09.34.20:554][123]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.34.20:574][123]LogPlayLevel: PIE: StaticDuplicateObject took: (0.020371s)
+[2016.07.16-09.34.20:575][123]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.34.20:575][123]LogPlayLevel: PIE: World Init took: (0.000959s)
+[2016.07.16-09.34.20:575][123]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021597s)
+[2016.07.16-09.34.20:603][123]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.34.20:609][123]LogInit: FAudioDevice initialized.
+[2016.07.16-09.34.20:654][123]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.34.20:660][123]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.34.20
+[2016.07.16-09.34.20:663][123]LogWorld: Bringing up level for play took: 0.007633
+[2016.07.16-09.34.20:666][123]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.138のプレイ イン エディタの開始時間
+[2016.07.16-09.34.20:666][123]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.23:515][374]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=25.750 Y=79.990 Z=0.000 Location: X=-647.222 Y=563.346 Z=213.600 Normal: X=0.947 Y=-0.322 Z=0.000 PenetrationDepth:0.000 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.34.23:527][375]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=24.032 Y=104.238 Z=0.000 Location: X=-646.829 Y=563.107 Z=213.600 Normal: X=0.900 Y=-0.436 Z=0.000 PenetrationDepth:0.000 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.34.23:820][400]PIE:Warning: 警告 parts_C_0 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.23:820][400]PIE:Warning: 警告 parts_C_1 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.23:820][400]PIE:Warning: 警告 parts_C_2 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.23:821][400]PIE:Warning: 警告 parts_C_3 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.23:821][400]PIE:Warning: 警告 parts_C_4 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:247][436]PIE:Warning: 警告 parts_C_5 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:247][436]PIE:Warning: 警告 parts_C_6 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:248][436]PIE:Warning: 警告 parts_C_7 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:248][436]PIE:Warning: 警告 parts_C_8 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:249][436]PIE:Warning: 警告 parts_C_9 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.24:735][479]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-18.018 Y=30.139 Z=0.000 Location: X=-657.160 Y=561.222 Z=213.607 Normal: X=0.977 Y=0.211 Z=-0.000 PenetrationDepth:1.904 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.34.24:770][482]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-4.814 Y=23.235 Z=0.000 Location: X=-656.596 Y=561.184 Z=213.607 Normal: X=0.995 Y=-0.101 Z=0.000 PenetrationDepth:3.125 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.34.24:805][485]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-22.359 Y=93.363 Z=0.000 Location: X=-653.322 Y=560.013 Z=213.607 Normal: X=0.955 Y=-0.296 Z=0.000 PenetrationDepth:0.224 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.34.24:897][493]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-77.750 Y=-113.900 Z=0.000 Location: X=-688.739 Y=656.162 Z=228.382 Normal: X=-0.981 Y=0.192 Z=0.000 PenetrationDepth:0.192 Actor:AIchara_2 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.16-09.34.24:909][494]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-85.400 Y=-111.921 Z=0.000 Location: X=-688.739 Y=656.162 Z=228.382 Normal: X=-0.878 Y=0.351 Z=-0.325 PenetrationDepth:0.228 Actor:AIchara_2 Component:CharacterMesh0 BoneName:head
+[2016.07.16-09.34.24:921][495]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-93.155 Y=-109.563 Z=0.000 Location: X=-688.739 Y=656.162 Z=228.382 Normal: X=-0.876 Y=0.359 Z=-0.321 PenetrationDepth:0.621 Actor:AIchara_2 Component:CharacterMesh0 BoneName:head
+[2016.07.16-09.34.24:931][496]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-100.090 Y=-106.831 Z=0.000 Location: X=-688.739 Y=656.162 Z=228.382 Normal: X=-0.877 Y=0.362 Z=-0.317 PenetrationDepth:1.063 Actor:AIchara_2 Component:CharacterMesh0 BoneName:head
+[2016.07.16-09.34.25:079][509]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-57.112 Y=4.863 Z=0.000 Location: X=-692.985 Y=657.656 Z=228.382 Normal: X=0.816 Y=0.578 Z=-0.000 PenetrationDepth:0.860 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.34.25:996][590]PIE:Warning: 警告 parts_C_10 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.25:997][590]PIE:Warning: 警告 parts_C_11 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.25:997][590]PIE:Warning: 警告 parts_C_12 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.25:997][590]PIE:Warning: 警告 parts_C_13 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.25:998][590]PIE:Warning: 警告 parts_C_14 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:837][666]PIE:Warning: 警告 parts_C_15 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:837][666]PIE:Warning: 警告 parts_C_16 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:838][666]PIE:Warning: 警告 parts_C_17 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:838][666]PIE:Warning: 警告 parts_C_18 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:839][666]PIE:Warning: 警告 parts_C_19 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:861][668]PIE:Warning: 警告 parts_C_20 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:862][668]PIE:Warning: 警告 parts_C_21 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:862][668]PIE:Warning: 警告 parts_C_22 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:862][668]PIE:Warning: 警告 parts_C_23 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.26:863][668]PIE:Warning: 警告 parts_C_24 のモビリティ：AddImpulse をしたい場合は、StaticMesh は「ムーバブル」にする必要があります。
+[2016.07.16-09.34.32:507][222]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.32:570][222]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.54:847][961]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.54:847][961]BlueprintLog: New page: Pre-Play auto-recompile
+[2016.07.16-09.34.54:860][961]LogPlayLevel: [PlayLevel] Compiling parts before play...
+[2016.07.16-09.34.54:941][961]LogPlayLevel: PlayLevel: Blueprint regeneration took 94 ms (3 blueprints)
+[2016.07.16-09.34.54:942][961]LogPlayLevel: [PlayLevel] Compiling AIchara before play...
+[2016.07.16-09.34.55:027][961]LogPlayLevel: PlayLevel: Blueprint regeneration took 179 ms (4 blueprints)
+[2016.07.16-09.34.55:027][961]LogPlayLevel: [PlayLevel] Compiling Mixamo_Maria before play...
+[2016.07.16-09.34.55:090][961]LogPlayLevel: PlayLevel: Blueprint regeneration took 243 ms (4 blueprints)
+[2016.07.16-09.34.55:091][961]LogPlayLevel: [PlayLevel] Compiling AIBP before play...
+[2016.07.16-09.34.55:165][961]LogPlayLevel: PlayLevel: Blueprint regeneration took 317 ms (4 blueprints)
+[2016.07.16-09.34.55:183][961]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:34:55)
+[2016.07.16-09.34.55:183][961]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.34.55:201][961]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018382s)
+[2016.07.16-09.34.55:202][961]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.34.55:202][961]LogPlayLevel: PIE: World Init took: (0.000949s)
+[2016.07.16-09.34.55:203][961]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019626s)
+[2016.07.16-09.34.55:230][961]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.34.55:236][961]LogInit: FAudioDevice initialized.
+[2016.07.16-09.34.55:280][961]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.34.55:285][961]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.34.55
+[2016.07.16-09.34.55:288][961]LogWorld: Bringing up level for play took: 0.007653
+[2016.07.16-09.34.55:292][961]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.764のプレイ イン エディタの開始時間
+[2016.07.16-09.34.55:292][961]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.34.57:634][160]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=120.227 Y=273.496 Z=0.000 Location: X=-673.355 Y=454.802 Z=211.712 Normal: X=-0.083 Y=-0.906 Z=-0.414 PenetrationDepth:5.274 Actor:AIchara_2 Component:CharacterMesh0 BoneName:calf_l
+[2016.07.16-09.34.57:646][161]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=104.595 Y=296.812 Z=0.000 Location: X=-673.788 Y=453.009 Z=211.483 Normal: X=-0.571 Y=-0.738 Z=-0.359 PenetrationDepth:0.549 Actor:AIchara_2 Component:CharacterMesh0 BoneName:calf_l
+[2016.07.16-09.34.58:192][209]PIE:Warning: 警告 AddImpulse させるには parts_C_0.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:193][209]PIE:Warning: 警告 AddImpulse させるには parts_C_1.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:193][209]PIE:Warning: 警告 AddImpulse させるには parts_C_2.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:193][209]PIE:Warning: 警告 AddImpulse させるには parts_C_3.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:194][209]PIE:Warning: 警告 AddImpulse させるには parts_C_4.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:309][219]PIE:Warning: 警告 AddImpulse させるには parts_C_5.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:310][219]PIE:Warning: 警告 AddImpulse させるには parts_C_6.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:310][219]PIE:Warning: 警告 AddImpulse させるには parts_C_7.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:310][219]PIE:Warning: 警告 AddImpulse させるには parts_C_8.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:311][219]PIE:Warning: 警告 AddImpulse させるには parts_C_9.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:962][277]PIE:Warning: 警告 AddImpulse させるには parts_C_10.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:963][277]PIE:Warning: 警告 AddImpulse させるには parts_C_11.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:963][277]PIE:Warning: 警告 AddImpulse させるには parts_C_12.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:964][277]PIE:Warning: 警告 AddImpulse させるには parts_C_13.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.34.58:964][277]PIE:Warning: 警告 AddImpulse させるには parts_C_14.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.00:128][384]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=49.731 Y=127.185 Z=0.000 Location: X=-638.873 Y=676.675 Z=228.303 Normal: X=-0.578 Y=0.170 Z=0.799 PenetrationDepth:19.026 Actor:AIchara4 Component:CharacterMesh0 BoneName:ball_l
+[2016.07.16-09.35.00:139][385]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=49.783 Y=131.835 Z=0.000 Location: X=-638.873 Y=676.675 Z=228.303 Normal: X=-0.566 Y=0.087 Z=0.820 PenetrationDepth:18.199 Actor:AIchara4 Component:CharacterMesh0 BoneName:ball_l
+[2016.07.16-09.35.00:161][387]LogCharacterMovement: AIchara3 is stuck and failed to move! Velocity: X=17.274 Y=12.211 Z=0.000 Location: X=-689.758 Y=643.332 Z=213.597 Normal: X=-0.988 Y=-0.156 Z=0.000 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.35.01:179][480]PIE:Warning: 警告 AddImpulse させるには parts_C_15.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:179][480]PIE:Warning: 警告 AddImpulse させるには parts_C_16.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:180][480]PIE:Warning: 警告 AddImpulse させるには parts_C_17.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:180][480]PIE:Warning: 警告 AddImpulse させるには parts_C_18.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:181][480]PIE:Warning: 警告 AddImpulse させるには parts_C_19.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:757][534]PIE:Warning: 警告 AddImpulse させるには parts_C_20.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:758][534]PIE:Warning: 警告 AddImpulse させるには parts_C_21.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:758][534]PIE:Warning: 警告 AddImpulse させるには parts_C_22.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:759][534]PIE:Warning: 警告 AddImpulse させるには parts_C_23.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.01:759][534]PIE:Warning: 警告 AddImpulse させるには parts_C_24.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.08:125][165]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.35.08:185][165]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.35.10:772][314]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.35.10:878][314]BlueprintEditorCompileResults: 情報 [1151.96] Compile of parts successful! [in 105 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.35.11:562][357]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/parts" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/Blueprints/parts.uasset" SILENT=true
+[2016.07.16-09.35.11:613][357]LogSavePackage: Save=37.68ms
+[2016.07.16-09.35.11:613][357]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/parts74DA54FE4505B376968B3EA724E29CBB.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/Blueprints/parts.uasset'
+[2016.07.16-09.35.11:616][357]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/Blueprints/parts.uasset
+[2016.07.16-09.35.13:655][455]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.35.13:655][455]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.35.13:656][455]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:35:13)
+[2016.07.16-09.35.13:656][455]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.35.13:674][455]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018633s)
+[2016.07.16-09.35.13:675][455]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.35.13:675][455]LogPlayLevel: PIE: World Init took: (0.001015s)
+[2016.07.16-09.35.13:676][455]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019940s)
+[2016.07.16-09.35.13:704][455]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.35.13:712][455]LogInit: FAudioDevice initialized.
+[2016.07.16-09.35.13:765][455]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.35.13:772][455]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.35.13
+[2016.07.16-09.35.13:774][455]LogWorld: Bringing up level for play took: 0.007670
+[2016.07.16-09.35.13:777][455]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.751のプレイ イン エディタの開始時間
+[2016.07.16-09.35.13:777][455]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.35.16:657][694]PIE:Warning: 警告 AddImpulse させるには parts_C_0.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:657][694]PIE:Warning: 警告 AddImpulse させるには parts_C_1.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:658][694]PIE:Warning: 警告 AddImpulse させるには parts_C_2.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:658][694]PIE:Warning: 警告 AddImpulse させるには parts_C_3.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:658][694]PIE:Warning: 警告 AddImpulse させるには parts_C_4.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:684][696]PIE:Warning: 警告 AddImpulse させるには parts_C_5.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:684][696]PIE:Warning: 警告 AddImpulse させるには parts_C_6.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:684][696]PIE:Warning: 警告 AddImpulse させるには parts_C_7.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:685][696]PIE:Warning: 警告 AddImpulse させるには parts_C_8.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.16:685][696]PIE:Warning: 警告 AddImpulse させるには parts_C_9.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.17:153][737]PIE:Warning: 警告 AddImpulse させるには parts_C_10.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.17:153][737]PIE:Warning: 警告 AddImpulse させるには parts_C_11.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.17:154][737]PIE:Warning: 警告 AddImpulse させるには parts_C_12.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.17:154][737]PIE:Warning: 警告 AddImpulse させるには parts_C_13.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.17:155][737]PIE:Warning: 警告 AddImpulse させるには parts_C_14.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.18:167][829]PIE:Warning: 警告 AddImpulse させるには parts_C_15.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.18:167][829]PIE:Warning: 警告 AddImpulse させるには parts_C_16.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.18:168][829]PIE:Warning: 警告 AddImpulse させるには parts_C_17.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.18:168][829]PIE:Warning: 警告 AddImpulse させるには parts_C_18.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.18:168][829]PIE:Warning: 警告 AddImpulse させるには parts_C_19.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.19:043][911]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=36.636 Y=149.422 Z=0.000 Location: X=-625.609 Y=639.712 Z=228.421 Normal: X=-0.281 Y=0.013 Z=0.960 PenetrationDepth:23.343 Actor:AIchara4 Component:CharacterMesh0 BoneName:ball_l
+[2016.07.16-09.35.19:054][912]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=33.977 Y=153.818 Z=0.000 Location: X=-625.609 Y=639.712 Z=228.421 Normal: X=0.973 Y=-0.233 Z=0.000 PenetrationDepth:28.152 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.35.19:064][913]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=31.374 Y=158.447 Z=0.000 Location: X=-625.609 Y=639.712 Z=228.421 Normal: X=0.999 Y=-0.052 Z=-0.000 PenetrationDepth:25.559 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.35.19:288][934]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=26.439 Y=228.079 Z=0.000 Location: X=-619.273 Y=682.553 Z=228.421 Normal: X=-0.988 Y=-0.154 Z=0.000 PenetrationDepth:26.743 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.35.19:845][987]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=18.450 Y=-2.481 Z=0.000 Location: X=-566.958 Y=751.553 Z=228.392 Normal: X=-0.011 Y=1.000 Z=0.000 PenetrationDepth:2.602 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.35.20:494][ 48]PIE:Warning: 警告 AddImpulse させるには parts_C_20.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.20:494][ 48]PIE:Warning: 警告 AddImpulse させるには parts_C_21.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.20:495][ 48]PIE:Warning: 警告 AddImpulse させるには parts_C_22.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.20:495][ 48]PIE:Warning: 警告 AddImpulse させるには parts_C_23.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.20:495][ 48]PIE:Warning: 警告 AddImpulse させるには parts_C_24.StaticMesh coa の 'Simulate Physics' を有効にしなくてはいけません。　
+[2016.07.16-09.35.32:081][199]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.35.32:142][199]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.37.24:266][109]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/MixamoAnimPack/Mixamo_Maria/coa" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset" SILENT=true
+[2016.07.16-09.37.24:282][109]LogSavePackage: Save=5.87ms
+[2016.07.16-09.37.24:282][109]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/coa2868158D419C77EA03A897ADDE909E72.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset'
+[2016.07.16-09.37.24:293][109]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/coa.uasset
+[2016.07.16-09.37.28:433][437]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.37.28:527][437]BlueprintEditorCompileResults: 情報 [1289.61] Compile of parts successful! [in 94 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.37.30:051][517]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.37.30:051][517]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.37.30:051][517]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:37:30)
+[2016.07.16-09.37.30:051][517]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.37.30:071][517]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019852s)
+[2016.07.16-09.37.30:072][517]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.37.30:072][517]LogPlayLevel: PIE: World Init took: (0.001068s)
+[2016.07.16-09.37.30:073][517]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021278s)
+[2016.07.16-09.37.30:105][517]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.37.30:112][517]LogInit: FAudioDevice initialized.
+[2016.07.16-09.37.30:162][517]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.37.30:168][517]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.37.30
+[2016.07.16-09.37.30:170][517]LogWorld: Bringing up level for play took: 0.007944
+[2016.07.16-09.37.30:174][517]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.354のプレイ イン エディタの開始時間
+[2016.07.16-09.37.30:174][517]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.37.34:722][909]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=81.942 Y=-221.610 Z=0.000 Location: X=-577.289 Y=618.605 Z=228.195 Normal: X=0.639 Y=0.769 Z=0.000 PenetrationDepth:0.000 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.37.44:022][813]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.37.44:078][813]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.30:828][221]BlueprintLog: New page: AIchara をコンパイル
+[2016.07.16-09.38.30:961][221]BlueprintEditorCompileResults: 情報 [1352.05] Compile of AIchara successful! [in 133 ms] (/Game/TopDownBP/Blueprints/AIchara.AIchara)
+[2016.07.16-09.38.32:662][315]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.32:662][315]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.38.32:663][315]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:38:32)
+[2016.07.16-09.38.32:663][315]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.38.32:682][315]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019446s)
+[2016.07.16-09.38.32:683][315]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.38.32:683][315]LogPlayLevel: PIE: World Init took: (0.000936s)
+[2016.07.16-09.38.32:683][315]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020641s)
+[2016.07.16-09.38.32:715][315]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.38.32:723][315]LogInit: FAudioDevice initialized.
+[2016.07.16-09.38.32:772][315]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.38.32:779][315]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.38.32
+[2016.07.16-09.38.32:781][315]LogWorld: Bringing up level for play took: 0.007603
+[2016.07.16-09.38.32:784][315]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.257のプレイ イン エディタの開始時間
+[2016.07.16-09.38.32:784][315]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.45:009][376]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.45:080][376]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.46:354][454]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.46:354][454]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.38.46:354][454]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:38:46)
+[2016.07.16-09.38.46:354][454]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.38.46:374][454]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019835s)
+[2016.07.16-09.38.46:375][454]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.38.46:375][454]LogPlayLevel: PIE: World Init took: (0.000990s)
+[2016.07.16-09.38.46:375][454]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021137s)
+[2016.07.16-09.38.46:407][454]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.38.46:414][454]LogInit: FAudioDevice initialized.
+[2016.07.16-09.38.46:466][454]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.38.46:473][454]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.38.46
+[2016.07.16-09.38.46:476][454]LogWorld: Bringing up level for play took: 0.009270
+[2016.07.16-09.38.46:480][454]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.047のプレイ イン エディタの開始時間
+[2016.07.16-09.38.46:480][454]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.58:848][522]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.38.58:920][522]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.06:953][ 28]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.39.07:063][ 28]BlueprintEditorCompileResults: 情報 [1388.15] Compile of parts successful! [in 110 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.39.08:369][111]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.08:369][111]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.39.08:369][111]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:39:08)
+[2016.07.16-09.39.08:369][111]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.39.08:388][111]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018504s)
+[2016.07.16-09.39.08:389][111]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.39.08:389][111]LogPlayLevel: PIE: World Init took: (0.000902s)
+[2016.07.16-09.39.08:389][111]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.019698s)
+[2016.07.16-09.39.08:421][111]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.39.08:428][111]LogInit: FAudioDevice initialized.
+[2016.07.16-09.39.08:476][111]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.39.08:483][111]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.39.08
+[2016.07.16-09.39.08:485][111]LogWorld: Bringing up level for play took: 0.007977
+[2016.07.16-09.39.08:488][111]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.039のプレイ イン エディタの開始時間
+[2016.07.16-09.39.08:488][111]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.12:482][396]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-50.923 Y=100.852 Z=0.000 Location: X=-634.519 Y=498.068 Z=213.615 Normal: X=1.000 Y=-0.029 Z=0.000 PenetrationDepth:0.000 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.12:600][405]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=111.384 Y=-18.362 Z=0.000 Location: X=-680.362 Y=574.938 Z=228.177 Normal: X=-0.935 Y=0.355 Z=0.000 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.13:452][469]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=21.463 Y=272.414 Z=0.000 Location: X=-572.335 Y=653.693 Z=213.393 Normal: X=0.907 Y=-0.421 Z=0.000 PenetrationDepth:0.000 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.13:569][478]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-56.148 Y=-2.483 Z=0.000 Location: X=-602.145 Y=751.967 Z=228.420 Normal: X=0.799 Y=0.601 Z=-0.000 PenetrationDepth:4.129 Actor:AIchara3 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.39.13:809][496]LogCharacterMovement: AIchara3 is stuck and failed to move! Velocity: X=34.112 Y=173.620 Z=0.000 Location: X=-649.997 Y=705.488 Z=213.591 Normal: X=-0.838 Y=-0.546 Z=0.000 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.16-09.39.19:388][936]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.19:448][936]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.56:287][910]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.56:287][910]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.39.56:287][910]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:39:56)
+[2016.07.16-09.39.56:287][910]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.39.56:307][910]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019814s)
+[2016.07.16-09.39.56:308][910]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.39.56:308][910]LogPlayLevel: PIE: World Init took: (0.000929s)
+[2016.07.16-09.39.56:308][910]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.021021s)
+[2016.07.16-09.39.56:339][910]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.39.56:345][910]LogInit: FAudioDevice initialized.
+[2016.07.16-09.39.56:390][910]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.39.56:397][910]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.39.56
+[2016.07.16-09.39.56:399][910]LogWorld: Bringing up level for play took: 0.007831
+[2016.07.16-09.39.56:403][910]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.125のプレイ イン エディタの開始時間
+[2016.07.16-09.39.56:403][910]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.39.59:774][173]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=0.014 Y=-4.744 Z=0.000 Location: X=-641.510 Y=660.819 Z=226.271 Normal: X=-0.354 Y=0.762 Z=-0.542 PenetrationDepth:19.189 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.59:786][174]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=0.030 Y=-9.711 Z=0.000 Location: X=-641.510 Y=660.819 Z=226.271 Normal: X=-0.251 Y=0.840 Z=-0.481 PenetrationDepth:16.938 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.59:811][176]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-1.809 Y=-5.221 Z=0.000 Location: X=-641.536 Y=660.815 Z=226.271 Normal: X=0.019 Y=0.925 Z=-0.380 PenetrationDepth:9.189 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.39.59:823][177]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-1.616 Y=-10.131 Z=0.000 Location: X=-641.536 Y=660.815 Z=226.271 Normal: X=0.111 Y=0.920 Z=-0.375 PenetrationDepth:4.001 Actor:AIchara2 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.40.03:361][496]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.40.03:432][496]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.40.33:882][719]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.40.33:882][719]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.40.33:882][719]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:40:33)
+[2016.07.16-09.40.33:882][719]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.40.33:901][719]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019194s)
+[2016.07.16-09.40.33:902][719]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.40.33:902][719]LogPlayLevel: PIE: World Init took: (0.000904s)
+[2016.07.16-09.40.33:902][719]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020400s)
+[2016.07.16-09.40.33:932][719]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.40.33:938][719]LogInit: FAudioDevice initialized.
+[2016.07.16-09.40.33:990][719]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.40.33:996][719]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.40.33
+[2016.07.16-09.40.33:999][719]LogWorld: Bringing up level for play took: 0.008040
+[2016.07.16-09.40.34:001][719]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.526のプレイ イン エディタの開始時間
+[2016.07.16-09.40.34:001][719]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.40.37:980][ 23]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 1143
+[2016.07.16-09.40.37:981][ 23]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.40.48:498][ 23]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 905
+[2016.07.16-09.40.48:498][ 23]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.40.51:980][ 45]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 1143
+[2016.07.16-09.40.51:980][ 45]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.40.54:000][ 45]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 905
+[2016.07.16-09.40.54:000][ 45]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.40.57:322][ 80]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 1143
+[2016.07.16-09.40.57:322][ 80]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.41.02:706][ 80]LogBlueprintDebug:Warning: Hit breakpoint on node 'K2Node_SpawnActorFromClass', from offset 905
+[2016.07.16-09.41.02:706][ 80]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ReceiveTick
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara
+
+[2016.07.16-09.41.22:483][741]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TopDownBP/Blueprints/AIchara" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/TopDownBP/Blueprints/AIchara.uasset" SILENT=true
+[2016.07.16-09.41.22:544][741]LogSavePackage: Save=49.09ms
+[2016.07.16-09.41.22:544][741]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/AIcharaCE4CB13347BFC74C3BC4059318A3DF7B.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/TopDownBP/Blueprints/AIchara.uasset'
+[2016.07.16-09.41.22:547][741]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/TopDownBP/Blueprints/AIchara.uasset
+[2016.07.16-09.41.32:964][605]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.41.33:030][605]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.42.15:576][603]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.42.15:576][603]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.42.15:576][603]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:42:15)
+[2016.07.16-09.42.15:576][603]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.42.15:596][603]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019545s)
+[2016.07.16-09.42.15:596][603]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.42.15:597][603]LogPlayLevel: PIE: World Init took: (0.000884s)
+[2016.07.16-09.42.15:597][603]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020731s)
+[2016.07.16-09.42.15:625][603]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.42.15:631][603]LogInit: FAudioDevice initialized.
+[2016.07.16-09.42.15:676][603]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.42.15:682][603]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.42.15
+[2016.07.16-09.42.15:684][603]LogWorld: Bringing up level for play took: 0.007747
+[2016.07.16-09.42.15:688][603]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.84のプレイ イン エディタの開始時間
+[2016.07.16-09.42.15:688][603]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.42.18:409][829]LogBlueprintDebug:Warning: Hit breakpoint on node 'CallFunc_K2_DestroyActor', from offset 410
+[2016.07.16-09.42.18:409][829]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/parts.parts_C:ReceiveActorBeginOverlap
+	Function /Game/Blueprints/parts.parts_C:ExecuteUbergraph_parts
+
+[2016.07.16-09.42.54:988][829]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.42.55:058][829]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.43.01:419][277]LogSavePackage: Save=208.46ms
+[2016.07.16-09.43.01:419][277]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/ThirdPersonExampleMap_Auto2CF4072884D422B0F322B7ABFB269C1FA.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto2.umap'
+[2016.07.16-09.43.01:420][277]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap_Auto2.umap
+[2016.07.16-09.43.01:422][277]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.247
+[2016.07.16-09.43.01:422][277]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.247
+[2016.07.16-09.43.01:424][277]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/TopDownBP/Blueprints/AIchara] ([1] browsable assets)...
+[2016.07.16-09.43.01:424][277]OBJ SavePackage: Finished generating thumbnails for package [/Game/TopDownBP/Blueprints/AIchara]
+[2016.07.16-09.43.01:473][277]LogSavePackage: Save=43.06ms
+[2016.07.16-09.43.01:473][277]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/AIchara_Auto2798F6B654B8926FBF5ED9FB775DFFF6F.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/TopDownBP/Blueprints/AIchara_Auto2.uasset'
+[2016.07.16-09.43.01:483][277]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/TopDownBP/Blueprints/AIchara_Auto2.uasset
+[2016.07.16-09.43.01:483][277]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/parts] ([1] browsable assets)...
+[2016.07.16-09.43.01:495][277]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/parts.parts]
+[2016.07.16-09.43.01:495][277]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/parts]
+[2016.07.16-09.43.01:495][277]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprints/parts" FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/Blueprints/parts_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2016.07.16-09.43.01:536][277]LogSavePackage: Save=32.55ms
+[2016.07.16-09.43.01:536][277]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/parts_Auto20200EE614183E39CC547A988498CC5BF.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/Blueprints/parts_Auto2.uasset'
+[2016.07.16-09.43.01:546][277]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/Blueprints/parts_Auto2.uasset
+[2016.07.16-09.43.01:546][277]LogFileHelpers: Auto-saving content packages took 0.124
+[2016.07.16-09.44.41:517][555]LogEditorTransaction: Undo ノードを移動
+[2016.07.16-09.44.41:984][576]LogEditorTransaction: Undo Delete current selection
+[2016.07.16-09.44.42:960][640]LogEditorTransaction: Undo ノードを移動
+[2016.07.16-09.44.43:682][685]LogEditorTransaction: Undo PIEリンクを作成
+[2016.07.16-09.44.44:248][718]LogEditorTransaction: Undo ノードを移動
+[2016.07.16-09.44.44:847][754]LogEditorTransaction: Undo PIEリンクを作成
+[2016.07.16-09.44.45:409][787]LogEditorTransaction: Undo Add Node
+[2016.07.16-09.44.51:702][245]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.44.51:807][245]BlueprintEditorCompileResults: 情報 [1732.89] Compile of parts successful! [in 105 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.45.43:798][216]BlueprintLog: New page: AIchara をコンパイル
+[2016.07.16-09.45.43:916][216]BlueprintEditorCompileResults: 情報 [1785.00] Compile of AIchara successful! [in 118 ms] (/Game/TopDownBP/Blueprints/AIchara.AIchara)
+[2016.07.16-09.45.46:486][360]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.45.46:486][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.45.46:486][360]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:45:46)
+[2016.07.16-09.45.46:486][360]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.45.46:505][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018943s)
+[2016.07.16-09.45.46:506][360]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.45.46:506][360]LogPlayLevel: PIE: World Init took: (0.001062s)
+[2016.07.16-09.45.46:507][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020315s)
+[2016.07.16-09.45.46:534][360]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.45.46:541][360]LogInit: FAudioDevice initialized.
+[2016.07.16-09.45.46:590][360]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.45.46:597][360]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.45.46
+[2016.07.16-09.45.46:599][360]LogWorld: Bringing up level for play took: 0.007990
+[2016.07.16-09.45.46:603][360]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.075のプレイ イン エディタの開始時間
+[2016.07.16-09.45.46:603][360]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.45.49:408][598]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara_2
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:01E1
+[2016.07.16-09.45.49:408][598]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.49:408][598]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara_2
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:02BE
+[2016.07.16-09.45.49:408][598]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.49:917][641]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara5
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:01E1
+[2016.07.16-09.45.49:917][641]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.49:918][641]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara5
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:02BE
+[2016.07.16-09.45.49:918][641]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.49:930][642]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara2
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:01E1
+[2016.07.16-09.45.49:931][642]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.49:931][642]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara2
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:02BE
+[2016.07.16-09.45.49:931][642]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.50:863][725]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara4
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:01E1
+[2016.07.16-09.45.50:863][725]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.50:863][725]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara4
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:02BE
+[2016.07.16-09.45.50:863][725]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.51:343][768]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara3
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:01E1
+[2016.07.16-09.45.51:343][768]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.51:343][768]LogScript:Warning: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+	AIchara_C /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.AIchara3
+	Function /Game/TopDownBP/Blueprints/AIchara.AIchara_C:ExecuteUbergraph_AIchara:02BE
+[2016.07.16-09.45.51:343][768]PIE:Error: エラー Blueprint Runtime Error: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill from function: 'ExecuteUbergraph_AIchara' from node: SpawnActor Parts in graph: EventGraph in object: AIchara with description: Attempted to access CharacterMesh0 via property Mesh, but CharacterMesh0 is pending kill
+[2016.07.16-09.45.54:613][ 78]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-4.096 Y=-1.493 Z=0.000 Location: X=-48.286 Y=33.379 Z=228.434 Normal: X=1.000 Y=0.016 Z=0.000 PenetrationDepth:0.511 Actor:parts_C_3 Component:StaticMesh BoneName:None
+[2016.07.16-09.46.15:906][ 93]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.46.15:977][ 93]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.47.31:424][994]BlueprintLog: New page: AIchara をコンパイル
+[2016.07.16-09.47.31:549][994]BlueprintEditorCompileResults: 情報 [1892.63] Compile of AIchara successful! [in 123 ms] (/Game/TopDownBP/Blueprints/AIchara.AIchara)
+[2016.07.16-09.47.33:424][107]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.47.33:424][107]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.47.33:424][107]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:47:33)
+[2016.07.16-09.47.33:424][107]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.47.33:444][107]LogPlayLevel: PIE: StaticDuplicateObject took: (0.019432s)
+[2016.07.16-09.47.33:445][107]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.47.33:445][107]LogPlayLevel: PIE: World Init took: (0.000933s)
+[2016.07.16-09.47.33:445][107]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020662s)
+[2016.07.16-09.47.33:474][107]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.47.33:480][107]LogInit: FAudioDevice initialized.
+[2016.07.16-09.47.33:526][107]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.47.33:533][107]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.47.33
+[2016.07.16-09.47.33:535][107]LogWorld: Bringing up level for play took: 0.007954
+[2016.07.16-09.47.33:538][107]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 1.01のプレイ イン エディタの開始時間
+[2016.07.16-09.47.33:538][107]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.47.36:334][331]LogBlueprintDebug:Warning: Hit breakpoint on node 'CallFunc_K2_DestroyActor', from offset 410
+[2016.07.16-09.47.36:334][331]LogBlueprintDebug: 
+Script call stack:
+	Function /Game/Blueprints/parts.parts_C:ReceiveActorBeginOverlap
+	Function /Game/Blueprints/parts.parts_C:ExecuteUbergraph_parts
+
+[2016.07.16-09.47.54:750][763]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-0.545 Y=-1.867 Z=0.000 Location: X=-754.117 Y=482.872 Z=228.421 Normal: X=-0.800 Y=0.600 Z=0.000 PenetrationDepth:2.661 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.47.54:761][764]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-1.285 Y=-4.403 Z=0.000 Location: X=-750.823 Y=485.440 Z=226.860 Normal: X=-0.407 Y=0.913 Z=0.000 PenetrationDepth:1.826 Actor:AIchara4 Component:CharacterMesh0 BoneName:thigh_l
+[2016.07.16-09.47.54:772][765]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-2.432 Y=-8.337 Z=0.000 Location: X=-748.421 Y=490.101 Z=226.860 Normal: X=-0.332 Y=0.943 Z=0.000 PenetrationDepth:0.520 Actor:AIchara4 Component:CharacterMesh0 BoneName:thigh_l
+[2016.07.16-09.47.54:783][766]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-3.638 Y=-12.468 Z=0.000 Location: X=-748.458 Y=490.828 Z=226.860 Normal: X=0.658 Y=0.753 Z=0.000 PenetrationDepth:0.983 Actor:AIchara3 Component:CharacterMesh0 BoneName:thigh_l
+[2016.07.16-09.47.54:884][776]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=-0.304 Y=-28.684 Z=0.000 Location: X=-749.393 Y=494.478 Z=227.651 Normal: X=-0.887 Y=0.461 Z=-0.031 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.47.55:003][788]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=11.720 Y=-26.405 Z=0.000 Location: X=-749.006 Y=496.052 Z=228.418 Normal: X=-0.946 Y=0.323 Z=0.000 PenetrationDepth:0.103 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.16-09.48.02:945][620]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.48.03:017][620]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.07:327][416]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.51.07:450][416]BlueprintEditorCompileResults: 情報 [2108.54] Compile of parts successful! [in 123 ms] (/Game/Blueprints/parts.parts)
+[2016.07.16-09.51.09:232][519]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.09:232][519]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.51.09:232][519]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:51:09)
+[2016.07.16-09.51.09:232][519]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.51.09:252][519]LogPlayLevel: PIE: StaticDuplicateObject took: (0.018976s)
+[2016.07.16-09.51.09:253][519]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.51.09:253][519]LogPlayLevel: PIE: World Init took: (0.001068s)
+[2016.07.16-09.51.09:253][519]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.020434s)
+[2016.07.16-09.51.09:283][519]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.51.09:290][519]LogInit: FAudioDevice initialized.
+[2016.07.16-09.51.09:337][519]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.51.09:343][519]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.51.09
+[2016.07.16-09.51.09:346][519]LogWorld: Bringing up level for play took: 0.007597
+[2016.07.16-09.51.09:349][519]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap 0.821のプレイ イン エディタの開始時間
+[2016.07.16-09.51.09:349][519]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.25:310][903]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.25:370][903]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.26:344][967]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.26:344][967]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.16-09.51.26:345][967]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/17 3:51:26)
+[2016.07.16-09.51.26:345][967]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.16-09.51.26:361][967]LogPlayLevel: PIE: StaticDuplicateObject took: (0.016365s)
+[2016.07.16-09.51.26:362][967]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.16-09.51.26:362][967]LogPlayLevel: PIE: World Init took: (0.000881s)
+[2016.07.16-09.51.26:362][967]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.017513s)
+[2016.07.16-09.51.26:392][967]LogInit: XAudio2 using 'スピーカー (3- USB Audio Device)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.16-09.51.26:398][967]LogInit: FAudioDevice initialized.
+[2016.07.16-09.51.26:443][967]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.16-09.51.26:449][967]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.16-18.51.26
+[2016.07.16-09.51.26:452][967]LogWorld: Bringing up level for play took: 0.007429
+[2016.07.16-09.51.26:455][967]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.073のプレイ イン エディタの開始時間
+[2016.07.16-09.51.26:455][967]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.52:811][229]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.51.52:869][229]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.16-09.52.09:781][482]LogWindows: Windows GetLastError: この操作を正しく終了しました。 (0)
+[2016.07.16-09.53.07:407][865]BlueprintLog: New page: parts をコンパイル
+[2016.07.16-09.53.08:838][865]LogCrashTracker: 
+
+
+[2016.07.16-09.53.08:838][865]LogCrashTracker: 
+
+
+[2016.07.16-09.53.08:838][865]LogWindows:Error: === Critical error: ===
+Assertion failed: SharedThis.Get() == this [File:D:\Build\++UE4+Release-4.12+Compile\Sync\Engine\Source\Runtime\Core\Public\Templates\SharedPointer.h] [Line: 1093] 
+
+
+
+
+

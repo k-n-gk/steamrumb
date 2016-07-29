@@ -1,0 +1,529 @@
+﻿Log file open, 07/15/16 12:01:12
+LogInit:Display: Running engine for game: steamrumb
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(-1854449711) SRandInit(-1854449710).
+LogTaskGraph: Started task graph with 4 named threads and 7 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.101778
+LogInit: Version: 4.12.5-3039270+++UE4+Release-4.12
+LogInit: API Version: 2992821
+LogInit: Net Version: 3039270
+LogDevObjectVersion: Number of dev versions registered: 13
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 3
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 1
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 2
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 6
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 2
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 0
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogInit: Compiled (64-bit): Jul  6 2016 09:09:46
+LogInit: Compiled with Visual C++: 19.00.23026.00
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.12
+LogInit: Command line:  
+LogInit: Base directory: C:/Program Files (x86)/Epic Games/4.12/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Using libcurl 7.41.0
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with WinSSL
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = true  - Libcurl will verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2016.07.15-03.01.12:233][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.15-03.01.12:233][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2016.07.15-03.01.12:253][  0]LogInit: Computer: MIYAZEMI-01
+[2016.07.15-03.01.12:253][  0]LogInit: User: game
+[2016.07.15-03.01.12:253][  0]LogInit: CPU Page size=65536, Cores=4
+[2016.07.15-03.01.12:253][  0]LogInit: High frequency timer resolution =3.355283 MHz
+[2016.07.15-03.01.12:253][  0]LogMemory: Memory total: Physical=16.0GB (16GB approx)
+[2016.07.15-03.01.12:253][  0]LogMemory: Platform Memory Stats for Windows
+[2016.07.15-03.01.12:253][  0]LogMemory: Process Physical Memory: 190.30 MB used, 190.30 MB peak
+[2016.07.15-03.01.12:253][  0]LogMemory: Process Virtual Memory: 195.05 MB used, 195.05 MB peak
+[2016.07.15-03.01.12:253][  0]LogMemory: Physical Memory: 3567.17 MB used, 16365.14 MB total
+[2016.07.15-03.01.12:253][  0]LogMemory: Virtual Memory: 554.16 MB used, 134217728.00 MB total
+[2016.07.15-03.01.12:595][  0]LogTextLocalizationManager: No specific translations for ('ja-JP') exist, so ('ja') translations will be used.
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:false):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (816077464) Localized String: (偽)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (816077464) Localized String: (false)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:K2Node, Key:true):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-942328987) Localized String: (真)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/Engine/ja/Engine.locres) Source String Hash: (-942328987) Localized String: (true)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:bLoop):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2133979316) Localized String: (再生が最後まで終わった後、ロープ再生するようにしますか？)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2133979316) Localized String: (ループが最後まで到達した時に、アニメーションのループを継続するべきか？)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:X):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースで値を取得するX座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (2060772590) Localized String: (ブレンドスペースでサンプリングするX座標)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Y):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースで値を取得するY座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1719607538) Localized String: (ブレンドスペースでサンプリングするY座標)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:Z):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースで値を取得するZ座標)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1728943471) Localized String: (ブレンドスペースでサンプリングするZ座標)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:BlendSpace):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1599043277) Localized String: (再生するブレンドスペースのアセット)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1599043277) Localized String: (再生するブレンド空間アセット)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_StateMachine:MaxTransitionsPerFrame):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (1567650430) Localized String: (このマシーンで1フレームあたりに同時に処理できるトランジションの最大数)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (1567650430) Localized String: (単一フレームでマシーンが「同時」に受け取れる遷移の最大数)
+[2016.07.15-03.01.12:675][  0]LogTextLocalizationManager:Warning: Loaded localization resources contain conflicting entries for (Namespace:UObjectToolTips, Key:AnimNode_BlendSpacePlayer:PlayRate):
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/EditorTutorials/ja/EditorTutorials.locres) Source String Hash: (-1274923958) Localized String: (再生速度の倍率です。負の数値も使う事ができます。その場合逆再生になります。)
+Localization Resource: (C:/Program Files (x86)/Epic Games/4.12/Engine/Content/Localization/ToolTips/ja/ToolTips.locres) Source String Hash: (-1274923958) Localized String: (再生レート乗数。アニメーションを逆再生する負の値にすることができます。)
+[2016.07.15-03.01.12:832][  0]LogD3D11RHI: D3D11 adapters:
+[2016.07.15-03.01.12:857][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 970' (Feature Level 11_0)
+[2016.07.15-03.01.12:857][  0]LogD3D11RHI:       4007/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2016.07.15-03.01.12:858][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2016.07.15-03.01.12:858][  0]LogD3D11RHI:       0/0/8182 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2016.07.15-03.01.12:858][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2016.07.15-03.01.12:861][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2016.07.15-03.01.12:861][  0]LogD3D11RHI:     GPU DeviceId: 0x13c2 (for the marketing name, search the web for "GPU Device Id")
+[2016.07.15-03.01.12:861][  0]LogWindows: EnumDisplayDevices:
+[2016.07.15-03.01.12:861][  0]LogWindows:    0. 'NVIDIA GeForce GTX 970' (P:1 D:1)
+[2016.07.15-03.01.12:861][  0]LogWindows:    1. 'NVIDIA GeForce GTX 970' (P:0 D:1)
+[2016.07.15-03.01.12:862][  0]LogWindows:    2. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.07.15-03.01.12:862][  0]LogWindows:    3. 'NVIDIA GeForce GTX 970' (P:0 D:0)
+[2016.07.15-03.01.12:862][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2016.07.15-03.01.12:862][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 970
+[2016.07.15-03.01.12:862][  0]LogD3D11RHI:   Driver Version: 365.10 (internal:10.18.13.6510, unified:365.10)
+[2016.07.15-03.01.12:862][  0]LogD3D11RHI:      Driver Date: 4-27-2016
+[2016.07.15-03.01.12:862][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2016.07.15-03.01.12:880][  0]LogD3D11RHI: Async texture creation enabled
+[2016.07.15-03.01.12:890][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2016.07.15-03.01.12:890][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Intermediate/Shaders/WorkingDirectory/8796/).
+[2016.07.15-03.01.12:890][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/game/AppData/Local/Temp/UnrealShaderWorkingDir/B4C4E26B4F5420E19E6438AB697BD361/'.
+[2016.07.15-03.01.12:891][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2016.07.15-03.01.15:207][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2016.07.15-03.01.15:214][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2016.07.15-03.01.15:222][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2016.07.15-03.01.15:229][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2016.07.15-03.01.15:237][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2016.07.15-03.01.15:245][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2016.07.15-03.01.15:252][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2016.07.15-03.01.15:258][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2016.07.15-03.01.15:265][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2016.07.15-03.01.15:272][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2016.07.15-03.01.15:278][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2016.07.15-03.01.15:291][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2016.07.15-03.01.15:291][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2016.07.15-03.01.15:292][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2016.07.15-03.01.15:368][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2016.07.15-03.01.15:374][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2016.07.15-03.01.15:380][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2016.07.15-03.01.15:386][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2016.07.15-03.01.15:394][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2016.07.15-03.01.15:394][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2016.07.15-03.01.16:176][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache: Loaded boot cache 0.53s 48MB C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2016.07.15-03.01.16:707][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2016.07.15-03.01.16:724][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2016.07.15-03.01.16:737][  0]LogDerivedDataCache: Using Local data cache path C:/Users/game/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2016.07.15-03.01.24:184][  0]LogInit: Selected Device Profile: [Windows]
+[2016.07.15-03.01.24:185][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2016.07.15-03.01.24:521][  0]LogMeshUtilities: No automatic mesh reduction module available
+[2016.07.15-03.01.24:521][  0]LogMeshUtilities: No automatic mesh merging module available
+[2016.07.15-03.01.24:521][  0]LogMeshUtilities: No distributed automatic mesh merging module available
+[2016.07.15-03.01.25:227][  0]LogAssetRegistry: FAssetRegistry took 0.0224 seconds to start up
+[2016.07.15-03.01.25:255][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.026800 seconds
+[2016.07.15-03.01.25:261][  0]LogUObjectArray: 28739 objects as part of root set at end of initial load.
+[2016.07.15-03.01.25:261][  0]LogUObjectAllocator: 5855624 out of 0 bytes used by permanent object pool.
+[2016.07.15-03.01.25:261][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2016.07.15-03.01.25:267][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2016.07.15-03.01.26:416][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.15-03.01.26:416][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2016.07.15-03.01.32:771][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2016.07.15-03.01.33:182][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.15-03.01.33:474][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.15-03.01.33:480][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.15-03.01.33:486][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.15-03.01.33:888][  0]LogEngine: Initializing Engine...
+[2016.07.15-03.01.34:098][  0]LogHMD: SteamVR failed to initialize.  Err: 126
+[2016.07.15-03.01.34:104][  0]LogHMD: SteamVR failed to initialize.  Err: 126
+[2016.07.15-03.01.34:315][  0]LogAIModule: Creating AISystem for world NewWorld
+[2016.07.15-03.01.34:322][  0]LogInit: XAudio2 using 'ASUS MX239-0 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.15-03.01.34:396][  0]LogInit: FAudioDevice initialized.
+[2016.07.15-03.01.34:416][  0]LogDerivedDataCache: Saved boot cache 0.02s 48MB C:/Users/game/AppData/Local/UnrealEngine/4.12/DerivedDataCache/Boot.ddc.
+[2016.07.15-03.01.34:425][  0]LogInit: Texture streaming: Enabled
+[2016.07.15-03.01.34:586][  0]LogInit: Transaction tracking system initialized
+[2016.07.15-03.01.34:603][  0]BlueprintLog: New page: エディタの読み込み
+[2016.07.15-03.01.34:730][  0]LocalizationService: 情報 ローカライズのサービスが無効になりました
+[2016.07.15-03.01.34:827][  0]LogConsoleResponse:Display: 
+[2016.07.15-03.01.35:283][  0]LogCook:Display: Max memory allowance for cook 8192mb
+[2016.07.15-03.01.35:283][  0]LogCook:Display: Mobile HDR setting 1
+[2016.07.15-03.01.35:922][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/' took 0.03s
+[2016.07.15-03.01.35:931][  0]SourceControl: 情報 ソースコントロールは無効です
+[2016.07.15-03.01.35:931][  0]Cmd: MAP LOAD FILE="../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/ThirdPersonBP/Maps/ThirdPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2016.07.15-03.01.36:056][  0]LightingResults: New page: ライティングのビルド
+[2016.07.15-03.01.36:058][  0]MapCheck: New page: マップをチェック
+[2016.07.15-03.01.36:058][  0]LightingResults: New page: <何も選択されていません>
+[2016.07.15-03.01.40:287][  0]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.15-03.01.40:390][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2016.07.15-03.01.40:390][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2016.07.15-03.01.40:435][  0]MapCheck: 情報 マップチェックが完了: 0 エラー、 0 警告、完了に 44.914ミリ秒かかりました。
+[2016.07.15-03.01.40:435][  0]LogFileHelpers: Loading map 'ThirdPersonExampleMap' took 4.505
+[2016.07.15-03.01.40:684][  0]LogCollectionManager: Loaded 0 collections in 0.001341 seconds
+[2016.07.15-03.01.40:726][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Collections/' took 0.01s
+[2016.07.15-03.01.40:726][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/Developers/game/Collections/' took 0.01s
+[2016.07.15-03.01.40:726][  0]LogFileCache: Scanning file cache for directory 'C:/Users/game/Documents/steamrumb/steamrumb 4.12/Content/Collections/' took 0.01s
+[2016.07.15-03.01.40:726][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000002 seconds
+[2016.07.15-03.01.40:733][  0]LogContentBrowser: Native class hierarchy populated in 0.0069 seconds. Added 2047 classes and 369 folders.
+[2016.07.15-03.01.40:736][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2016.07.15-03.01.40:737][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2016.07.15-03.01.40:737][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0004 seconds. Added 12 classes and 0 folders.
+[2016.07.15-03.01.40:740][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.15-03.01.41:611][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
+[2016.07.15-03.01.41:614][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.15-03.01.41:765][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2016.07.15-03.01.41:769][  0]LogUObjectGlobals:Warning: オブジェクト 'Class なし.' が見つかりませんでした
+[2016.07.15-03.01.41:794][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
+[2016.07.15-03.01.41:794][  0]LogLoad: Full Startup: 33.41 seconds (BP compile: 0.27 seconds)
+[2016.07.15-03.01.41:794][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2016.07.15-03.01.41:794][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2016.07.15-03.01.41:806][  0]LogOcInput: OculusInput pre-init called
+[2016.07.15-03.01.41:826][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2016.07.15-03.01.42:203][  0]LogRenderer: Reallocating scene render targets to support 1208x576 (Frame:2).
+[2016.07.15-03.01.42:262][  1]LogAssetRegistry: Asset discovery search completed in 17.0576 seconds
+[2016.07.15-03.01.42:262][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2016.07.15-03.01.42:263][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000020 seconds (updated 0 objects)
+[2016.07.15-04.01.21:231][648]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0006 seconds. Added 111 classes and 0 folders.
+[2016.07.15-04.01.25:284][867]LogRenderer: Reallocating scene render targets to support 1208x696 (Frame:2984).
+[2016.07.15-04.02.22:374][545]LogSkeletalMesh: InitArticulated: Bodies already created (/Engine/Transient.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2016.07.15-04.02.22:607][545]LogContentBrowser:Verbose: The majority of assets in the view are of type: AnimSequence
+[2016.07.15-04.03.23:624][406]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.055
+[2016.07.15-04.03.23:626][406]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton] ([1] browsable assets)...
+[2016.07.15-04.03.23:626][406]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton]
+[2016.07.15-04.03.23:657][406]LogSavePackage: Save=4.19ms
+[2016.07.15-04.03.23:657][406]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Maria_J_J_Ong_Skeleton_Auto13BA676514421EE0F172402968C706511.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton_Auto1.uasset'
+[2016.07.15-04.03.23:658][406]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton_Auto1.uasset
+[2016.07.15-04.03.23:658][406]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria] ([1] browsable assets)...
+[2016.07.15-04.03.23:686][406]OBJ SavePackage:     Rendered thumbnail for [SkeletalMesh /Game/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria.Maximo_Maria]
+[2016.07.15-04.03.23:686][406]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria]
+[2016.07.15-04.03.23:755][406]LogSavePackage: Save=59.19ms
+[2016.07.15-04.03.23:755][406]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Maximo_Maria_Auto1C1148ADE43D788139F4638A3750AD055.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria_Auto1.uasset'
+[2016.07.15-04.03.23:756][406]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria_Auto1.uasset
+[2016.07.15-04.03.23:756][406]LogFileHelpers: Auto-saving content packages took 0.132
+[2016.07.15-04.11.15:808][331]LogRenderer: Reallocating scene render targets to support 1208x704 (Frame:33405).
+[2016.07.15-04.14.39:593][575]LogTexture:Display: テクスチャをビルド中: T_Blade_TAxe2_M (AutoDXT)
+[2016.07.15-04.14.39:634][575]LogTexture:Display: テクスチャをビルド中: T_Blade_TAxe2_D (AutoDXT)
+[2016.07.15-04.14.39:775][575]LogTexture:Display: テクスチャをビルド中: T_Blade_TAxe1_N (BC5)
+[2016.07.15-04.14.39:817][575]LogTexture:Display: テクスチャをビルド中: T_Blade_TAxe2_N (BC5)
+[2016.07.15-04.14.39:847][575]LogTexture:Display: テクスチャをビルド中: T_Blade_TAxe1_D (AutoDXT)
+[2016.07.15-04.14.40:005][575]LogMaterial: Missing cached shader map for material M_Blade_TAxe, compiling. 
+[2016.07.15-04.15.24:902][140]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.016
+[2016.07.15-04.15.24:903][140]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton] ([1] browsable assets)...
+[2016.07.15-04.15.24:903][140]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton]
+[2016.07.15-04.15.24:918][140]LogSavePackage: Save=3.92ms
+[2016.07.15-04.15.24:918][140]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Maria_J_J_Ong_Skeleton_Auto2EB821A7640386D4C48E4DCA9137F7045.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton_Auto2.uasset'
+[2016.07.15-04.15.24:918][140]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton_Auto2.uasset
+[2016.07.15-04.15.24:918][140]LogFileHelpers: Auto-saving content packages took 0.016
+[2016.07.15-04.20.50:363][449]LogRenderer: Reallocating scene render targets to support 1208x712 (Frame:47912).
+[2016.07.15-04.25.25:775][ 91]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap' took 0.017
+[2016.07.15-04.25.25:776][ 91]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria] ([1] browsable assets)...
+[2016.07.15-04.25.25:807][ 91]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria.Mixamo_Maria]
+[2016.07.15-04.25.25:807][ 91]OBJ SavePackage: Finished generating thumbnails for package [/Game/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria]
+[2016.07.15-04.25.25:855][ 91]LogSavePackage: Save=37.25ms
+[2016.07.15-04.25.25:855][ 91]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Mixamo_Maria_Auto3ED24C6894799EB8E0C2EE19C8647891A.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria_Auto3.uasset'
+[2016.07.15-04.25.25:855][ 91]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Autosaves/Game/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria_Auto3.uasset
+[2016.07.15-04.25.25:855][ 91]LogFileHelpers: Auto-saving content packages took 0.080
+[2016.07.15-04.25.34:749][118]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.15-04.25.34:749][118]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2016.07.15-04.25.34:764][118]PIE: New page: PIEセッション: ThirdPersonExampleMap (2016/07/15 22:25:34)
+[2016.07.15-04.25.34:764][118]LogPlayLevel: Creating play world package: /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap
+[2016.07.15-04.25.34:811][118]LogPlayLevel: PIE: StaticDuplicateObject took: (0.047320s)
+[2016.07.15-04.25.34:813][118]LogAIModule: Creating AISystem for world ThirdPersonExampleMap
+[2016.07.15-04.25.34:813][118]LogPlayLevel: PIE: World Init took: (0.000976s)
+[2016.07.15-04.25.34:813][118]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap to /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap (0.048720s)
+[2016.07.15-04.25.34:835][118]LogInit: XAudio2 using 'ASUS MX239-0 (2- NVIDIA High Definition Audio)' : 2 channels at 48 kHz using 16 bits per sample (channel mask 0x3)
+[2016.07.15-04.25.34:839][118]LogInit: FAudioDevice initialized.
+[2016.07.15-04.25.34:917][118]LogWorld: Game class is 'BP_stiranGameMode_C'
+[2016.07.15-04.25.34:923][118]LogWorld: Bringing World /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap.ThirdPersonExampleMap up for play (max tick rate 0) at 2016.07.15-13.25.34
+[2016.07.15-04.25.34:926][118]LogWorld: Bringing up level for play took: 0.007999
+[2016.07.15-04.25.34:929][118]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0004 seconds. Added 11 classes and 0 folders.
+[2016.07.15-04.25.34:932][118]PIE: 情報 /Game/ThirdPersonBP/Maps/UEDPIE_0_ThirdPersonExampleMap -0.144のプレイ イン エディタの開始時間
+[2016.07.15-04.25.34:932][118]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.15-04.25.37:775][373]LogCharacterMovement: AIchara2 is stuck and failed to move! Velocity: X=289.211 Y=221.422 Z=0.000 Location: X=-645.333 Y=592.015 Z=214.124 Normal: X=-0.949 Y=0.171 Z=0.266 PenetrationDepth:0.000 Actor:AIchara5 Component:CharacterMesh0 BoneName:foot_r
+[2016.07.15-04.25.37:786][374]LogCharacterMovement: AIchara2 is stuck and failed to move! Velocity: X=312.469 Y=214.054 Z=0.000 Location: X=-646.976 Y=592.179 Z=214.386 Normal: X=-0.979 Y=0.130 Z=0.157 PenetrationDepth:0.000 Actor:AIchara5 Component:CharacterMesh0 BoneName:foot_r
+[2016.07.15-04.25.38:705][457]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=244.238 Y=10.744 Z=0.000 Location: X=-211.847 Y=691.045 Z=213.639 Normal: X=-0.867 Y=-0.498 Z=0.010 PenetrationDepth:0.000 Actor:AIchara_2 Component:CharacterMesh0 BoneName:foot_l
+[2016.07.15-04.25.40:668][635]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-230.392 Y=-8.078 Z=0.000 Location: X=-61.657 Y=1139.051 Z=213.639 Normal: X=-0.451 Y=-0.892 Z=0.000 PenetrationDepth:8.502 Actor:AIchara_2 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.40:724][640]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-149.556 Y=-18.645 Z=0.000 Location: X=-64.809 Y=1131.993 Z=213.639 Normal: X=0.148 Y=-0.989 Z=0.000 PenetrationDepth:3.260 Actor:AIchara_2 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.40:758][643]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-355.599 Y=132.301 Z=0.000 Location: X=-106.975 Y=1059.167 Z=213.630 Normal: X=-0.144 Y=-0.990 Z=0.000 PenetrationDepth:0.120 Actor:AIchara5 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.40:880][654]LogCharacterMovement: AIchara3 is stuck and failed to move! Velocity: X=-307.962 Y=190.204 Z=0.000 Location: X=-178.357 Y=1006.791 Z=213.519 Normal: X=-0.474 Y=-0.880 Z=-0.025 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.41:079][672]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-209.972 Y=100.237 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.512 Y=-0.813 Z=-0.275 PenetrationDepth:0.123 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:101][674]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-22.925 Y=3.959 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.442 Y=-0.862 Z=-0.248 PenetrationDepth:6.614 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:102][674]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-397.740 Y=-42.456 Z=0.000 Location: X=-148.556 Y=1108.428 Z=213.639 Normal: X=0.097 Y=-0.995 Z=-0.000 PenetrationDepth:2.898 Actor:AIchara_2 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.41:113][675]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-45.637 Y=7.791 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.446 Y=-0.860 Z=-0.247 PenetrationDepth:6.628 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:113][675]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-397.899 Y=-40.945 Z=0.000 Location: X=-148.556 Y=1108.428 Z=213.639 Normal: X=0.186 Y=-0.983 Z=-0.000 PenetrationDepth:2.386 Actor:AIchara_2 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.41:124][676]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-67.722 Y=11.428 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.454 Y=-0.855 Z=-0.251 PenetrationDepth:6.503 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:124][676]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-398.048 Y=-39.466 Z=0.000 Location: X=-148.556 Y=1108.428 Z=213.639 Normal: X=0.381 Y=-0.925 Z=-0.000 PenetrationDepth:0.511 Actor:AIchara_2 Component:CharacterMesh0 BoneName:hand_r
+[2016.07.15-04.25.41:135][677]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-90.179 Y=15.041 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.460 Y=-0.849 Z=-0.258 PenetrationDepth:6.323 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:135][677]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-398.186 Y=-38.047 Z=0.000 Location: X=-148.556 Y=1108.428 Z=213.639 Normal: X=0.403 Y=-0.915 Z=0.000 PenetrationDepth:0.411 Actor:AIchara_2 Component:CharacterMesh0 BoneName:lowerarm_r
+[2016.07.15-04.25.41:146][678]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-113.067 Y=18.637 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.466 Y=-0.841 Z=-0.275 PenetrationDepth:5.940 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:146][678]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-398.320 Y=-36.627 Z=0.000 Location: X=-148.556 Y=1108.428 Z=213.639 Normal: X=0.378 Y=-0.926 Z=0.000 PenetrationDepth:0.175 Actor:AIchara_2 Component:CharacterMesh0 BoneName:lowerarm_r
+[2016.07.15-04.25.41:157][679]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-134.239 Y=21.884 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.465 Y=-0.839 Z=-0.283 PenetrationDepth:4.002 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:168][680]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-156.993 Y=25.300 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.472 Y=-0.830 Z=-0.297 PenetrationDepth:3.611 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:168][680]LogCharacterMovement: AIchara_2 is stuck and failed to move! Velocity: X=-358.485 Y=-18.059 Z=0.000 Location: X=-188.781 Y=1173.008 Z=213.506 Normal: X=-0.030 Y=0.677 Z=-0.735 PenetrationDepth:0.000 Actor:AIchara5 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.15-04.25.41:180][681]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-180.311 Y=28.722 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.436 Y=-0.844 Z=-0.313 PenetrationDepth:2.194 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:191][682]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-202.975 Y=31.972 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.404 Y=-0.845 Z=-0.351 PenetrationDepth:1.699 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:202][683]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-225.828 Y=35.176 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.373 Y=-0.851 Z=-0.369 PenetrationDepth:1.153 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:202][683]LogCharacterMovement: AIchara_2 is stuck and failed to move! Velocity: X=-355.085 Y=-60.673 Z=0.000 Location: X=-196.934 Y=1174.518 Z=213.506 Normal: X=-0.093 Y=0.996 Z=0.000 PenetrationDepth:0.000 Actor:AIchara5 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.15-04.25.41:213][684]LogCharacterMovement: AIchara4 is stuck and failed to move! Velocity: X=-248.445 Y=38.278 Z=0.000 Location: X=-180.636 Y=1058.751 Z=213.542 Normal: X=-0.355 Y=-0.860 Z=-0.366 PenetrationDepth:0.327 Actor:AIchara5 Component:CharacterMesh0 BoneName:spine_02
+[2016.07.15-04.25.41:224][685]LogCharacterMovement: AIchara_2 is stuck and failed to move! Velocity: X=-359.769 Y=-116.944 Z=0.000 Location: X=-201.253 Y=1177.327 Z=213.506 Normal: X=-0.161 Y=0.987 Z=0.000 PenetrationDepth:0.000 Actor:AIchara5 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.15-04.25.41:974][753]LogCharacterMovement: AIchara_2 is stuck and failed to move! Velocity: X=-378.949 Y=-128.054 Z=0.000 Location: X=-490.237 Y=1149.205 Z=213.506 Normal: X=-0.241 Y=0.971 Z=-0.000 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.15-04.25.41:996][755]LogCharacterMovement: AIchara_2 is stuck and failed to move! Velocity: X=-378.010 Y=-130.799 Z=0.000 Location: X=-494.788 Y=1149.747 Z=213.506 Normal: X=-0.257 Y=0.967 Z=0.000 PenetrationDepth:0.000 Actor:AIchara4 Component:CharacterMesh0 BoneName:hand_l
+[2016.07.15-04.25.42:262][779]LogCharacterMovement: Mixamo_Maria_C_0 is stuck and failed to move! Velocity: X=7.702 Y=-40.029 Z=0.000 Location: X=-746.435 Y=1024.532 Z=228.421 Normal: X=-0.983 Y=-0.182 Z=0.000 PenetrationDepth:3.996 Actor:AIchara3 Component:CharacterMesh0 BoneName:upperarm_r
+[2016.07.15-04.25.43:009][847]LogCharacterMovement: AIchara5 is stuck and failed to move! Velocity: X=-368.963 Y=-154.487 Z=0.000 Location: X=-535.316 Y=1076.578 Z=212.087 Normal: X=0.790 Y=-0.042 Z=-0.612 PenetrationDepth:8.763 Actor:AIchara4 Component:CharacterMesh0 BoneName:calf_l
+[2016.07.15-04.26.08:208][278]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.15-04.26.08:264][278]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel' has LevelScriptBlueprint '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap' with GeneratedClass '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap_C' with ClassGeneratedBy '/Game/ThirdPersonBP/Maps/ThirdPersonExampleMap.ThirdPersonExampleMap:PersistentLevel.ThirdPersonExampleMap'
+[2016.07.15-04.33.33:344][902]LogSavePackage: Save=4.45ms
+[2016.07.15-04.33.33:344][902]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Maria_J_J_Ong_Skeleton371A3A954735588EB1A01EA30A5010A9.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton.uasset'
+[2016.07.15-04.33.33:348][902]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Anims/Maria_J_J_Ong_Skeleton.uasset
+[2016.07.15-04.33.33:416][902]LogSavePackage: Save=45.51ms
+[2016.07.15-04.33.33:416][902]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Maximo_MariaAC82F4D9456798A96B94EE9ADD6A0B7D.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria.uasset'
+[2016.07.15-04.33.33:420][902]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Mesh/Maximo_Maria.uasset
+[2016.07.15-04.33.33:464][902]LogSavePackage: Save=30.26ms
+[2016.07.15-04.33.33:464][902]LogSavePackage: Moving '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Saved/Mixamo_Maria041455AA41EE792E240020BF523A3480.tmp' to '../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria.uasset'
+[2016.07.15-04.33.33:468][902]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/game/Documents/steamrumb/steamrumb 4.12/Content/MixamoAnimPack/Mixamo_Maria/Mixamo_Maria.uasset
+[2016.07.15-04.33.33:744][902]LogWindowsTextInputMethodSystem:Display: IME system now activated using TSF (Microsoft IME).
+[2016.07.15-04.33.33:915][903]Cmd: QUIT_EDITOR
+[2016.07.15-04.33.34:677][903]LogExit: Preparing to exit.
+[2016.07.15-04.33.35:334][903]LogExit: Editor shut down
+[2016.07.15-04.33.35:334][903]LogExit: Transaction tracking system shut down
+[2016.07.15-04.33.35:464][903]LogObj: Freed 0b from 0 cluster array pools.
+[2016.07.15-04.33.35:464][903]LogExit: Object subsystem successfully closed.
+[2016.07.15-04.33.35:482][903]LogD3D11RHI: Shutdown
+[2016.07.15-04.33.35:482][903]LogD3D11RHI: CleanupD3DDevice
+[2016.07.15-04.33.35:548][903]LogD3D11RHI: ~FD3D11DynamicRHI
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (215)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module BlueprintGraph (214)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (213)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module CrashTracker (212)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module SceneOutliner (211)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module WidgetCarousel (210)
+[2016.07.15-04.33.35:560][903]LogModuleManager: Shutting down and abandoning module AddContentDialog (209)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module GameplayTags (208)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module EditorWidgets (207)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module CollectionManager (206)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module StatsViewer (205)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module FoliageEdit (204)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module LandscapeEditor (203)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (202)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module ActorPickerMode (201)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module GeometryMode (200)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module TextureAlignMode (199)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module BspMode (198)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module HardwareSurvey (197)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (196)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module SequenceRecorder (195)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module AutomationWorker (194)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (193)
+[2016.07.15-04.33.35:561][903]LogModuleManager: Shutting down and abandoning module PlacementMode (192)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (191)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module CharacterAI (190)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module SmartSnapping (189)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module SessionServices (188)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module ViewportSnapping (187)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module LogVisualizer (186)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (185)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module IntroTutorials (184)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (183)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (182)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (181)
+[2016.07.15-04.33.35:562][903]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (180)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (179)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (178)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (177)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module MergeActors (176)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module SizeMap (175)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module TreeMap (174)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module ReferenceViewer (173)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module LocalizationService (172)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (171)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module HardwareTargeting (170)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (169)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module UndoHistory (168)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module UserFeedback (167)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module XmlParser (166)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module Blutility (165)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (164)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (163)
+[2016.07.15-04.33.36:373][903]LogModuleManager: Shutting down and abandoning module InputBindingEditor (162)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (161)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module SettingsEditor (160)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module ProjectLauncher (159)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module SessionFrontend (158)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module ProfilerClient (157)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (156)
+[2016.07.15-04.33.36:374][903]LogModuleManager: Shutting down and abandoning module DeviceManager (155)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module AutomationController (154)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module AutomationWindow (153)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Layers (152)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (151)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module DetailCustomizations (150)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module PackagesDialog (149)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Persona (148)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Kismet (147)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module GraphEditor (146)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module ClassViewer (145)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Toolbox (144)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module ModuleUI (143)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module MovieSceneTools (142)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module OutputLog (141)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module GammaUI (140)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Documentation (139)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (138)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module AnalyticsET (137)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module Analytics (136)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module PortalServices (135)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module PortalRpc (134)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module MessagingRpc (133)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module GameplayDebugger (132)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module AITestSuite (131)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module AIModule (130)
+[2016.07.15-04.33.36:429][903]LogModuleManager: Shutting down and abandoning module ProfilerService (129)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module TaskGraph (128)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SlateRemote (127)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SteamVRController (126)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SteamVR (125)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (124)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module OculusLibrary (123)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module OculusInput (122)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (121)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module CableComponent (120)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (119)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (118)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module HTML5Networking (117)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SuperSearch (116)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (115)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (114)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module PluginBrowser (113)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module EpicSurvey (112)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module DesktopPlatform (111)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (110)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module UObjectPlugin (109)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (108)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (107)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module SourceControl (106)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module GitSourceControl (105)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (104)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (103)
+[2016.07.15-04.33.36:464][903]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (102)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module MeshPaint (101)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (100)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module HotReload (99)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module MainFrame (98)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module LevelEditor (97)
+[2016.07.15-04.33.36:465][903]LogModuleManager: Shutting down and abandoning module ContentBrowser (96)
+[2016.07.15-04.33.36:466][903]LogModuleManager: Shutting down and abandoning module Paper2DEditor (95)
+[2016.07.15-04.33.36:466][903]LogModuleManager: Shutting down and abandoning module UdpMessaging (94)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (93)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module Paper2D (92)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (91)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module Media (90)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module WmfMedia (89)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module MediaAssets (88)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (87)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (86)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (85)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module VREditor (84)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (83)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module PropertyEditor (82)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (81)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module FunctionalTesting (80)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (79)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module Sequencer (78)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (77)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module MessageLog (76)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module AssetTools (75)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module UMGEditor (74)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module UMG (73)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module SlateReflector (72)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module Slate (71)
+[2016.07.15-04.33.36:566][903]LogModuleManager: Shutting down and abandoning module EditorStyle (70)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (69)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (68)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module XAudio2 (67)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module Networking (65)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module Core (64)
+[2016.07.15-04.33.36:568][903]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (63)
+[2016.07.15-04.33.36:569][903]LogModuleManager: Shutting down and abandoning module AssetRegistry (62)
+[2016.07.15-04.33.36:709][903]LogModuleManager: Shutting down and abandoning module KismetCompiler (61)
+[2016.07.15-04.33.36:709][903]LogModuleManager: Shutting down and abandoning module PhysXFormats (60)
+[2016.07.15-04.33.36:709][903]LogModuleManager: Shutting down and abandoning module MeshUtilities (59)
+[2016.07.15-04.33.36:709][903]LogModuleManager: Shutting down and abandoning module DerivedDataCache (58)
+[2016.07.15-04.33.36:754][903]LogDerivedDataCache: Shutdown
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (57)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (56)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (55)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (54)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (53)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (52)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (51)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (50)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module ImageWrapper (49)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (48)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (47)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (46)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (45)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (44)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (43)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (42)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (41)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (40)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module Messaging (39)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (38)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (37)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (36)
+[2016.07.15-04.33.36:754][903]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (35)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (34)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (33)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (32)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (31)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (30)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (29)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (28)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (27)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (26)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (25)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (24)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module TargetPlatform (23)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module InputCore (22)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module Settings (21)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (19)
+[2016.07.15-04.33.36:755][903]LogModuleManager: Shutting down and abandoning module HTTP (18)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module XMPP (17)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module OculusRift (16)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (15)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module TextureCompressor (14)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module ShaderCore (13)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module Landscape (12)
+[2016.07.15-04.33.38:258][903]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (11)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module OpenGLDrv (10)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module D3D11RHI (9)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (8)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module Renderer (7)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module Engine (6)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module CoreUObject (5)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module NetworkFile (4)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module StreamingFile (3)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module SandboxFile (2)
+[2016.07.15-04.33.38:262][903]LogModuleManager: Shutting down and abandoning module PakFile (1)
+[2016.07.15-04.33.38:264][903]LogExit: Exiting.
+[2016.07.15-04.33.38:265][903]Log file closed, 07/15/16 13:33:38
